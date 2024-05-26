@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css/bundle';
 import HouseScore from './HouseScore';
 import Rules from './Rules';
+import GoldenCircle from './GoldenCircle';
 
 
 function Home() {
@@ -65,7 +66,6 @@ function Home() {
     setClassNameMoon(`flex ${borderMoon} border-${borderColorMoon} rounded-full w-[40px] h-[40px] p-2 justify-center items-center`);
 
   }
-  console.log('test', diamondColor)
 
 
   useEffect(() => {
@@ -88,9 +88,10 @@ function Home() {
       let diamondTotal = 0;
       let moonTotal = 0;
       let starTotal = 0;
-
+      let artistComponent;
       artist.artist.forEach((data, i) => {
-        const artistComponent = (
+        if (i % 2 === 0 ) {
+        artistComponent = (
           <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={i}>
             <div className='text-white w-10'>{data.carte}</div>
             {data.maison === 'coeur' && <Image src='/Coeur_white.svg' width={15} height={15}/>}
@@ -102,7 +103,22 @@ function Home() {
             <p className='text-white w-1/2'>{data.pseudo}</p>
             <div className='text-white w-14 text-left'>{data.points}</div>
           </div>
-        );
+          );
+        }else {
+          artistComponent = (
+            <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={i}>
+              <div className='text-white w-10'>{data.carte}</div>
+              {data.maison === 'coeur' && <Image src='/Coeur_white.svg' width={15} height={15}/>}
+              {data.maison === 'trèfle' && <Image src='/Trefle_white.svg' width={15} height={15}/>}
+              {data.maison === 'pique' && <Image src='/Pique_white.svg' width={15} height={15}/>}
+              {data.maison === 'carreau' && <Image src='/Carreau_white.svg' width={15} height={15}/>}
+              {data.maison === 'lune' && <Image src='/Lune.svg' width={15} height={15} />}
+              {data.maison === 'étoile' && <Image src='/Etoile.svg' width={15} height={15} />}
+              <p className='text-gray w-1/2'>{data.pseudo}</p>
+              <div className='text-gray w-14 text-left'>{data.points}</div>
+            </div>
+            );
+        }
 
         switch (data.maison) {
           case 'coeur':
@@ -143,6 +159,7 @@ function Home() {
   }, []);
 
   const swiperRef = useRef();
+
 
   return (
     <div className='w-screen h-screen bg-[url(/main_background.webp)] bg-cover bg-no-repeat'>
