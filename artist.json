@@ -1,0 +1,549 @@
+[
+    {
+      "urlInsta": "https://www.instagram.com/zozita.slowpoke.com",
+      "pseudo": "@zozita.slowpoke",
+      "maison": "carreau",
+      "points": 150,
+      "carte": "1"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/maatatouage.com",
+      "pseudo": "@maatatouage",
+      "maison": "carreau",
+      "points": 76,
+      "carte": "2"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/lun_art_attoo.com",
+      "pseudo": "@lun_art_attoo",
+      "maison": "carreau",
+      "points": 190,
+      "carte": "3"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/hobssystatoo.com",
+      "pseudo": "@hobssystatoo",
+      "maison": "carreau",
+      "points": 45,
+      "carte": "4"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/julius.tatouage.com",
+      "pseudo": "@julius.tatouage",
+      "maison": "carreau",
+      "points": 123,
+      "carte": "5"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/al_claude.com",
+      "pseudo": "@al_claude",
+      "maison": "carreau",
+      "points": 164,
+      "carte": "6"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/10.tattoo.com",
+      "pseudo": "@10.tattoo",
+      "maison": "carreau",
+      "points": 72,
+      "carte": "7"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/darkaleid_tattoo.com",
+      "pseudo": "@darkaleid_tattoo",
+      "maison": "carreau",
+      "points": 131,
+      "carte": "8"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/lema_tatts.com",
+      "pseudo": "@lema_tatts",
+      "maison": "carreau",
+      "points": 110,
+      "carte": "9"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/wynonamaret.com",
+      "pseudo": "@wynonamaret",
+      "maison": "carreau",
+      "points": 56,
+      "carte": "10"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/kaolin.ttt.com",
+      "pseudo": "@kaolin.ttt",
+      "maison": "carreau",
+      "points": 98,
+      "carte": "V"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/patesausaumon.com",
+      "pseudo": "@patesausaumon",
+      "maison": "carreau",
+      "points": 182,
+      "carte": "D"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/leclair_ttt.com",
+      "pseudo": "@leclair_ttt",
+      "maison": "carreau",
+      "points": 140,
+      "carte": "R"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/unlockh.art.com",
+      "pseudo": "@unlockh.art",
+      "maison": "étoile",
+      "points": 88,
+      "carte": "1"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/aim_dessire.com",
+      "pseudo": "@aim_dessire",
+      "maison": "étoile",
+      "points": 125,
+      "carte": "2"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/shilita_tattoo.com",
+      "pseudo": "@shilita_tattoo",
+      "maison": "étoile",
+      "points": 37,
+      "carte": "3"
+    },
+    {
+      "urlInsta": "https://www.instagram.com/arsene.ariel.com",
+      "pseudo": "@arsene.ariel",
+      "maison": "étoile",
+      "points": 195,
+      "carte": "4"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/lelia.pastor.com",
+        "pseudo": "@lelia.pastor",
+        "maison": "étoile",
+        "points": 102,
+        "carte": "5"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/yolaelx.com",
+        "pseudo": "@yolaelx",
+        "maison": "étoile",
+        "points": 77,
+        "carte": "6"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/la_amicale.com",
+        "pseudo": "@la_amicale",
+        "maison": "étoile",
+        "points": 113,
+        "carte": "7"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/varvara.tattooo.com",
+        "pseudo": "@varvara.tattooo",
+        "maison": "étoile",
+        "points": 148,
+        "carte": "8"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/erromis_.com",
+        "pseudo": "@erromis_",
+        "maison": "étoile",
+        "points": 169,
+        "carte": "9"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/machiavelise.com",
+        "pseudo": "@machiavelise",
+        "maison": "étoile",
+        "points": 84,
+        "carte": "10"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/skopitprod.com",
+        "pseudo": "@skopitprod",
+        "maison": "étoile",
+        "points": 117,
+        "carte": "V"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/lisuko__.com",
+        "pseudo": "@lisuko__",
+        "maison": "étoile",
+        "points": 158,
+        "carte": "D"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/tattootoutdoux.com",
+        "pseudo": "@tattootoutdoux",
+        "maison": "étoile",
+        "points": 78,
+        "carte": "R"
+      },
+      {
+        "urlInsta": "https://www.instagram.com/pace.tattoo.com",
+        "pseudo": "@pace.tattoo",
+        "maison": "coeur",
+        "points": 95,
+        "carte": "1"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/la_mome_indigo.com",
+        "pseudo": "@la_mome_indigo",
+        "maison": "coeur",
+        "points": 123,
+        "carte": "2"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/daluatattooer.com",
+        "pseudo": "@daluatattooer",
+        "maison": "coeur",
+        "points": 85,
+        "carte": "3"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/lullaby.ttt.com",
+        "pseudo": "@lullaby.ttt",
+        "maison": "coeur",
+        "points": 142,
+        "carte": "4"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/mae.tattooist.com",
+        "pseudo": "@mae.tattooist",
+        "maison": "coeur",
+        "points": 76,
+        "carte": "5"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/yugs_le_wizard.ttt.com",
+        "pseudo": "@yugs_le_wizard.ttt",
+        "maison": "coeur",
+        "points": 110,
+        "carte": "6"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/chrysaora.ttt.com",
+        "pseudo": "@chrysaora.ttt",
+        "maison": "coeur",
+        "points": 97,
+        "carte": "7"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/luba_illustration.com",
+        "pseudo": "@luba_illustration",
+        "maison": "coeur",
+        "points": 135,
+        "carte": "8"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/navixtattoo.com",
+        "pseudo": "@navixtattoo",
+        "maison": "coeur",
+        "points": 79,
+        "carte": "9"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/jenba_tatou.com",
+        "pseudo": "@jenba_tatou",
+        "maison": "coeur",
+        "points": 102,
+        "carte": "10"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/dollyy_ttt.com",
+        "pseudo": "@dollyy_ttt",
+        "maison": "coeur",
+        "points": 88,
+        "carte": "V"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/hyperchic_tattoo.com",
+        "pseudo": "@hyperchic_tattoo",
+        "maison": "coeur",
+        "points": 116,
+        "carte": "D"
+    },
+    {
+        "urlInsta": "https://www.instagram.com/111psy_passeur_dart.com",
+        "pseudo": "@111psy_passeur_dart",
+        "maison": "coeur",
+        "points": 150,
+        "carte": "R"
+    },
+        {
+          "urlInsta": "https://www.instagram.com/uneminibiche.com",
+          "pseudo": "@uneminibiche",
+          "maison": "lune",
+          "points": 85,
+          "carte": "1"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/kazh_ink.com",
+          "pseudo": "@kazh_ink",
+          "maison": "lune",
+          "points": 123,
+          "carte": "2"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/piloo.tattoo.com",
+          "pseudo": "@piloo.tattoo",
+          "maison": "lune",
+          "points": 170,
+          "carte": "3"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/bestiole__.com",
+          "pseudo": "@bestiole__",
+          "maison": "lune",
+          "points": 96,
+          "carte": "4"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/selune_.com",
+          "pseudo": "@selune_",
+          "maison": "lune",
+          "points": 135,
+          "carte": "5"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/mango_iink.com",
+          "pseudo": "@mango_iink",
+          "maison": "lune",
+          "points": 107,
+          "carte": "6"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/skinslayerrr.com",
+          "pseudo": "@skinslayerrr",
+          "maison": "lune",
+          "points": 154,
+          "carte": "7"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/yvink_.com",
+          "pseudo": "@yvink_",
+          "maison": "lune",
+          "points": 82,
+          "carte": "8"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/mademoiselle_renard.com",
+          "pseudo": "@mademoiselle_renard",
+          "maison": "lune",
+          "points": 136,
+          "carte": "9"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/brito_tattoo.com",
+          "pseudo": "@brito_tattoo",
+          "maison": "lune",
+          "points": 119,
+          "carte": "10"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/aude.after.hours.com",
+          "pseudo": "@aude.after.hours",
+          "maison": "lune",
+          "points": 78,
+          "carte": "V"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/toxicjungletattoo.com",
+          "pseudo": "@toxicjungletattoo",
+          "maison": "lune",
+          "points": 165,
+          "carte": "D"
+        },
+        {
+          "urlInsta": "https://www.instagram.com/_jakolo_.com",
+          "pseudo": "@_jakolo_",
+          "maison": "lune",
+          "points": 142,
+          "carte": "R"
+        },
+            {
+              "urlInsta": "https://www.instagram.com/pereisma_.com",
+              "pseudo": "@pereisma_",
+              "maison": "trèfle",
+              "points": 98,
+              "carte": "1"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/maggie.ink.art.com",
+              "pseudo": "@maggie.ink.art",
+              "maison": "trèfle",
+              "points": 117,
+              "carte": "2"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/ninontattoo.com",
+              "pseudo": "@ninontattoo",
+              "maison": "trèfle",
+              "points": 81,
+              "carte": "3"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/lilink__.com",
+              "pseudo": "@lilink__",
+              "maison": "trèfle",
+              "points": 142,
+              "carte": "4"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/cfacezine.com",
+              "pseudo": "@cfacezine",
+              "maison": "trèfle",
+              "points": 95,
+              "carte": "5"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/markemill_le_magicien.com",
+              "pseudo": "@markemill_le_magicien",
+              "maison": "trèfle",
+              "points": 128,
+              "carte": "6"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/unepetitechimere.com",
+              "pseudo": "@unepetitechimere",
+              "maison": "trèfle",
+              "points": 76,
+              "carte": "7"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/poupeekipikdamour.com",
+              "pseudo": "@poupeekipikdamour",
+              "maison": "trèfle",
+              "points": 163,
+              "carte": "8"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/juliet_simone.com",
+              "pseudo": "@juliet_simone",
+              "maison": "trèfle",
+              "points": 110,
+              "carte": "9"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/so__tattoo.com",
+              "pseudo": "@so__tattoo",
+              "maison": "trèfle",
+              "points": 134,
+              "carte": "10"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/gaia.rica.com",
+              "pseudo": "@gaia.rica",
+              "maison": "trèfle",
+              "points": 89,
+              "carte": "V"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/akane_b_tattoo.com",
+              "pseudo": "@akane_b_tattoo",
+              "maison": "trèfle",
+              "points": 120,
+              "carte": "D"
+            },
+            {
+              "urlInsta": "https://www.instagram.com/miss.swiss.tattoo.com",
+              "pseudo": "@miss.swiss.tattoo",
+              "maison": "trèfle",
+              "points": 145,
+              "carte": "R"
+            },
+                {
+                  "urlInsta": "https://www.instagram.com/jesuscubillos_tattoo.com",
+                  "pseudo": "@jesuscubillos_tattoo",
+                  "maison": "pique",
+                  "points": 106,
+                  "carte": "1"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/jony.raize.tattoo.com",
+                  "pseudo": "@jony.raize.tattoo",
+                  "maison": "pique",
+                  "points": 89,
+                  "carte": "2"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/vinzhu.ttt.com",
+                  "pseudo": "@vinzhu.ttt",
+                  "maison": "pique",
+                  "points": 124,
+                  "carte": "3"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/kuraudo.tattoo.com",
+                  "pseudo": "@kuraudo.tattoo",
+                  "maison": "pique",
+                  "points": 97,
+                  "carte": "4"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/__allumette__.com",
+                  "pseudo": "@__allumette__",
+                  "maison": "pique",
+                  "points": 135,
+                  "carte": "5"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/nhuns.ttt.com",
+                  "pseudo": "@nhuns.ttt",
+                  "maison": "pique",
+                  "points": 78,
+                  "carte": "6"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/dr.straussberg.com",
+                  "pseudo": "@dr.straussberg",
+                  "maison": "pique",
+                  "points": 112,
+                  "carte": "7"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/ktotatoo.com",
+                  "pseudo": "@ktotatoo",
+                  "maison": "pique",
+                  "points": 143,
+                  "carte": "8"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/jubile.tat.com",
+                  "pseudo": "@jubile.tat",
+                  "maison": "pique",
+                  "points": 97,
+                  "carte": "9"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/sheog_tattoo.com",
+                  "pseudo": "@sheog_tattoo",
+                  "maison": "pique",
+                  "points": 128,
+                  "carte": "10"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/hellobato.com",
+                  "pseudo": "@hellobato",
+                  "maison": "pique",
+                  "points": 81,
+                  "carte": "V"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/lady_chouquette_.com",
+                  "pseudo": "@lady_chouquette_",
+                  "maison": "pique",
+                  "points": 113,
+                  "carte": "D"
+                },
+                {
+                  "urlInsta": "https://www.instagram.com/pgromieu_tattoo.com",
+                  "pseudo": "@pgromieu_tattoo",
+                  "maison": "pique",
+                  "points": 156,
+                  "carte": "R"
+                }
+              
+          ]
