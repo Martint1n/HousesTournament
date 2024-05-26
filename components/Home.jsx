@@ -70,7 +70,7 @@ function Home() {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch('http://localhost:3000/users');
+      const response = await fetch('https://house-tournament-backend.vercel.app/users');
       const artist = await response.json();
       
       const maisonComponents = {
