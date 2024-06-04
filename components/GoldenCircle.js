@@ -13,7 +13,7 @@ function GoldenCircle(props) {
             <p className='text-xs text-white pb-2'>Le but est de nous reconnaître plus facilement et de renforcer le sentiment d'appartenance.</p>
             <p className='text-xs text-white pb-2'>Cela est tout à fait optionnel, ne vous forcez pas si l'idée ne vous plait pas !</p>
           </div>
-          <div className='w-2/5 flex flex-col justify-center items-center'>
+          <div className='w-2/5 flex flex-col justify-center items-center landscapes:pb-2 landscapes:pt-2'>
             <Image src='/UMB.PNG' width={60} height={60} /> 
             <div className='pt-2 pb-2'>
               <Image src='/Fleche.svg' width={50} height={50} /> 

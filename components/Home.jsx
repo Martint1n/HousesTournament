@@ -11,6 +11,7 @@ import 'swiper/css/bundle';
 import HouseScore from './HouseScore';
 import Rules from './Rules';
 import GoldenCircle from './GoldenCircle';
+import TestImage from './TestImage'
 
 
 function Home() {

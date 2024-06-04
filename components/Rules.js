@@ -1,13 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import GoldenCircle from './GoldenCircle';
+import TestImage from './TestImage'
+
 
 function Rules() {
     const [showGoldenCircle, setShowGoldenCircle] = React.useState(false);
 console.log(showGoldenCircle)
   return (
     <div className='h-[40vh] w-screen landscapes:h-[75vh]'>
-        <div className='bg-white h-2/5 pt-2' >
+        <div className='bg-white h-2/5 pt-2'> 
             <h2 className='pl-3 pb-2'>REGLES DU JEU</h2>
             <p className='text-xs pl-3 pb-2'>Chers Artisans, </p>
             <p className='text-xs pl-3 pb-3'>
@@ -49,7 +51,14 @@ console.log(showGoldenCircle)
         <div onClick={()=> setShowGoldenCircle(!showGoldenCircle)}>
         <GoldenCircle showGoldenCircle={showGoldenCircle} /> 
         </div>
-
+        <div className='pl-3'>
+            <p className='pt-2'>INFORMATIONS SUPPLEMENTAIRES</p>
+            <p className='pt-2 text-sm'>Mise à Jour des Scores </p>
+            <p className='text-xs'>Les scores seront régulièrement mis à jour sur le site dédié.</p>
+            <p className='pt-2 text-sm'>Cumul des Points de Collaboration</p>
+            <p className='text-xs pb-3'>Tous les participants d'une ccollaboration reçoiveent les points complets.</p>
+        </div>
+        <TestImage/>
     </div>
 
     )
