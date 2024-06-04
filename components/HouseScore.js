@@ -69,11 +69,11 @@ const houses = sortedScores.map((data, i) => {
 
 
   return (
-    <div className='flex h-1/3 w-full justify-center mt-3'>
-      <div className='flex flex-col justify-center items-center mr-2 border border-gold border-solid bg-black h-full w-2/5 rounded-b-full'>
+    <div className='flex h-1/3 w-full justify-center mt-3 landscapes:h-[280px]'>
+      <div className='flex flex-col justify-center items-center mr-2 border border-gold border-solid bg-black h-full w-2/5 rounded-b-full landscapes:w-1/4 landscapes:mr-10'>
       {houses}
       </div>
-      <div className='flex flex-col justify-center items-center ml-2 border-2 border-gold border-solid bg-deep-blue h-full w-2/5 rounded-b-full'>
+      <div className='flex flex-col justify-center items-center ml-2 border-2 border-gold border-solid bg-deep-blue h-full w-2/5 rounded-b-full landscapes:w-1/4'>
         <h2 className='pb-2'>
           <span style={{display: 'block', color: '#ddb758', textAlign: 'center'}}>TOURNOI</span>
           <span style={{display: 'block', color: 'white'}}>DES MAISONS</span>

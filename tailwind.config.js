@@ -10,6 +10,11 @@ module.exports = {
       backgroundImage: {
       'background-main': "require('/main_background.wepg')",
     }},
+    screens: {
+      'landscapes': {
+          'raw': `only screen and (max-height: 600px) and (orientation: landscape)`
+      }
+  },
     colors: {
       'deep-blue': '#02091d',
       'gold': '#ddb758',

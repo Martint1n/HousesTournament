@@ -6,7 +6,7 @@ function Rules() {
     const [showGoldenCircle, setShowGoldenCircle] = React.useState(false);
 console.log(showGoldenCircle)
   return (
-    <div className='h-[40vh] w-screen'>
+    <div className='h-[40vh] w-screen landscapes:h-[75vh]'>
         <div className='bg-white h-2/5 pt-2' >
             <h2 className='pl-3 pb-2'>REGLES DU JEU</h2>
             <p className='text-xs pl-3 pb-2'>Chers Artisans, </p>
@@ -36,7 +36,7 @@ console.log(showGoldenCircle)
                     Tous les <span className='text-white font-bold'>participants impliqués</span> seront récompensés
                 </p>
             </div>
-            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-4/5 w-2/5 rounded-b-full'>
+            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-4/5 w-2/5 rounded-b-full landscapes:w-1/4 landscapes:m-auto'>
                 <h2 className='text-gold pb-2'>MAISONS</h2>
                 <div className='flex pb-2'>
                     <Image src='/Etoile_gold.svg' width={10} height={10} />
