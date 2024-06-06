@@ -8,12 +8,12 @@ import { faExclamation } from '@fortawesome/free-solid-svg-icons';
 
 function Rules() {
     const [showGoldenCircle, setShowGoldenCircle] = React.useState(false);
-console.log(showGoldenCircle)
+    console.log(showGoldenCircle)
   return (
     <div className='h-[45vh] w-screen mt-10 landscapes:h-[80vh]'>
         <div className='bg-white h-2/5 pt-4 pb-4 landscapes:h-1/2 landscapes:pt-6'> 
             <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2">LE TOURNOI DES MAISONS</h2>
-            <p className='text-xs pl-3 pb-2'>Chers Artisans, </p>
+            <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
             <p className='text-xs pl-3'>
                 Afin de renforcer l'engagement et l'aspect collaboratif du projet.<br/>
                 J'ai décidé de mettre en place un <span className='font-bold'>grand jeu</span> fil rouge appelé
