@@ -247,7 +247,7 @@ function Home() {
 
       <div className='flex items-center justify-center'>
         <Image src={'/Logo.svg'} width={150} height={150} />
-        <h1 className="text-white text-xl font-['Cormorand Garamond'] font-semibold">LUNÉTOILE</h1>
+        <h1 className="text-white text-xl font-['Cormorant_Garamond'] font-semibold">LUNÉTOILE</h1>
       </div>
 
       <HouseScore
