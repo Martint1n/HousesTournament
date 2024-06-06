@@ -12,7 +12,7 @@ console.log(showGoldenCircle)
   return (
     <div className='h-[45vh] w-screen mt-10 landscapes:h-[80vh]'>
         <div className='bg-white h-2/5 pt-4 landscapes:h-1/2 landscapes:pt-6'> 
-            <h2 className="font-['Cormorand_Garamond'] font-semibold pl-3 pb-2">REGLES DU JEU</h2>
+            <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2">LE TOURNOI DES MAISONS</h2>
             <p className='text-xs pl-3 pb-2'>Chers Artisans, </p>
             <p className='text-xs pl-3 pb-3'>
                 Afin de renforcer l'engagement et l'aspect collaboratif du projet.<br/>
@@ -20,14 +20,16 @@ console.log(showGoldenCircle)
                 <span className='font-bold'>Tournoi des maisons.</span>
             </p>
         </div>
-        <div className='bg-[url(/main_background.webp)] h-full bg-cover bg-no-repeat flex flex-row items-center pb-5 mt-5 landscapes:mt-0'>
+        <div className='bg-[url(/main_background.webp)] h-[60vh] bg-cover bg-no-repeat flex flex-row items-center pb-5 mt-5 landscapes:mt-0 landscapes:h-screen'>
             <div className='w-3/5 pr-2 mt-5 pt-3'>
-                <h2 className="font-['Cormorand Garamond'] font-bold text-white pl-3 pb-2 mt-5">POINTS</h2>
+                <h3 className="font-['Cormorant_Garamond'] font-semibold text-white underline underline-offset-4 pl-3 pb-2 mt-5">POINTS ET MISSIONS</h3>
                 <p className='text-white text-xs pl-3 pb-3'>
                     Vous <span className='text-white font-bold'>gagnez des points</span> en fonction de vos interactions
                     avec les stories et avec les autres artisans Lunétoile.
                 </p>
-                <h2 className="font-['Cormorand Garamond'] font-bold text-white pl-3 pb-2">RECOMPENSES</h2>
+                <p className='text-xs font-bold text-white pl-3 pb-3'>Consultez la liste des missions pour connaître toutes les manières de gagner des points.</p>
+                <p className='text-xs text-white pl-3 pb-3'>Les scores seront régulièrement mis à jour sur le site.</p>
+                <h2 className="font-['Cormorant_Garamond'] font-bold text-white pl-3 pb-2 underline underline-offset-4">RECOMPENSES</h2>
                 <p className='text-white text-xs pl-3 pb-2' >
                     La <span className='text-white font-bold'>personne avec le plus haut score</span> individuel
                     sera récompensée <br/>(détails à venir).
@@ -37,10 +39,10 @@ console.log(showGoldenCircle)
                     le plus haut score sera récompensé <br/>(détails à venir).
                 </p>
                 <p className='text-white text-xs pl-3 pb-5'>
-                    Tous les <span className='text-white font-bold'>participants impliqués</span> seront récompensés
+                    Tous les <span className='text-white font-bold'>participants impliqués</span> seront récompensés.
                 </p>
             </div>
-            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-4/5 w-2/5 rounded-b-full landscapes:w-1/4 landscapes:m-auto'>
+            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-3/5 w-2/5 rounded-b-full landscapes:w-1/4 landscapes:m-auto landscapes:h-2/3'>
                 <h2 className='text-gold pb-2'>MAISONS</h2>
                 <div className='flex pb-2'>
                     <Image src='/Etoile_gold.svg' width={10} height={10} />
@@ -50,16 +52,27 @@ console.log(showGoldenCircle)
                 <p className='text-gold text-xs'>le cumul des points des 13 personnes d'une maison constitue un <span className='text-gold font-bold'>score de maison</span></p>
             </div>
         </div>
-        <div onClick={()=> setShowGoldenCircle(!showGoldenCircle)}>
-        <GoldenCircle showGoldenCircle={showGoldenCircle} /> 
+        <div className='pl-3 mt-5 w-3/5'>
+            <p className="font-['Cormorant_Garamond'] font-bold pt-2">PRINCIPE DES STORIES</p>
+            <p className='pt-2 text-xs'>Les stories seront 
+            <span className='text-xs font-bold'> quotidiennes </span> 
+            et alterneront entre 
+            <span className='text-xs font-bold'> teasers et révélations </span> 
+            de cartes. <br/>
+            Tous les deux jours, une nouvelle carte sera révélée et sera précédée d'un teaser pour créer de l'anticipation.
+            </p>
+            <p className='text-xs pt-2'>Les teasers montreront une image assombrie et 
+            <span className='text-xs font-bold'> vous pourrez deviner de quelle carte il s'agit.</span> 
+            </p>
+            <p className='pt-2 text-xs'>Le lendemain, 
+            <span className='text-xs font-bold'> la carte complète sera dévoilée </span> 
+            avec un tag de l'artiste qui l'a illustrée.</p>
+            <p className='text-xs pt-2 pb-3'><span className='text-xs font-bold'>Participez </span> 
+            activement aux stories pour 
+            <span className='text-xs font-bold'> accumuler des points </span> 
+            pour vous et votre maison !</p>
         </div>
-        <div className='pl-3 mt-5'>
-            <p className="font-['Cormorand Garamond'] font-bold pt-2">INFORMATIONS SUPPLEMENTAIRES</p>
-            <p className='pt-2 text-sm'>Mise à Jour des Scores </p>
-            <p className='text-xs'>Les scores seront régulièrement mis à jour sur le site dédié.</p>
-            <p className='pt-2 text-sm'>Cumul des Points de Collaboration</p>
-            <p className='text-xs pb-3'>Tous les participants d'une ccollaboration reçoivent les points complets.</p>
-        </div>
+        <GoldenCircle showGoldenCircle={true} /> 
         <div className='bg-deep-blue w-screen flex pt-5 pb-5 justify-center'>
             <h2 className="text-gold font-['Cormorant_Garamond'] font-semibold">ENGAGEMENT STORY</h2>
         </div>
@@ -101,7 +114,7 @@ console.log(showGoldenCircle)
 
         <div className='bg-deep-blue w-screen flex pt-5 pb-5 flex-col'>
             <h2 className="text-gold font-['Cormorant_Garamond'] font-semibold self-center">COLLABORATIONS</h2>
-            <p className='text-xs italic text-white leading-5 pl-3 underline decoration-gold'>Si vous effectuez ces missions avec des personnes <br/>hors de vos cercles sociaux, vos points sont doublés</p>
+            <p className='text-xs italic text-white leading-5 pl-3 self-center'>Si vous effectuez ces missions avec des personnes <br/>hors de vos cercles sociaux, vos points sont doublés</p>
         </div>
         <div className='pl-3 flex pt-3 pb-3 items-center'>
         <ul className='list-disc pl-3'>
@@ -162,11 +175,11 @@ console.log(showGoldenCircle)
         <div className='bg-deep-blue w-screen flex pt-5 pb-5 flex-col'>
             <h2 className="text-red font-['Cormorant_Garamond'] font-semibold self-center pb-3">ANTIMISSIONS</h2>
             <div className='flex pl-3 pr-3 justify-between'>
-                <p className='text-xs text-red leading-5 underline'>Actions entrainant<br/>une perte de points</p>
+                <p className='text-xs text-white leading-5'>Actions entrainant<br/>une perte de points</p>
                 <div className=' flex justify-center items-center w-[35px] h-[40px] border-2 border-red rounded-b-full'>
                     <FontAwesomeIcon icon={faExclamation} width={5} height={30} color='red'/>
                 </div>
-                <p className='text-xs text-red leading-5 underline'>Actions entrainant<br/>une perte de points</p>
+                <div className='w-1/3 landscapes:w-1/6'></div>
             </div>
         </div>
         <div className='pl-3 flex pt-3 pb-3 items-center bg-charcoal'>
