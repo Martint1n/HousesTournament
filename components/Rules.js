@@ -56,7 +56,7 @@ console.log(showGoldenCircle)
             <p className='pt-2 text-sm'>Mise à Jour des Scores </p>
             <p className='text-xs'>Les scores seront régulièrement mis à jour sur le site dédié.</p>
             <p className='pt-2 text-sm'>Cumul des Points de Collaboration</p>
-            <p className='text-xs pb-3'>Tous les participants d'une ccollaboration reçoiveent les points complets.</p>
+            <p className='text-xs pb-3'>Tous les participants d'une ccollaboration reçoivent les points complets.</p>
         </div>
         <TestImage/>
     </div>

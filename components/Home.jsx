@@ -46,33 +46,22 @@ function Home() {
   const [classNameStar, setClassNameStar] = useState('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center');
   const [classNameMoon, setClassNameMoon] = useState('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center');
 
-  const changeColor = (heartColor, diamondColor, spadeColor, clubColor, starColor, moonColor, borderHeart, borderColorHeart, borderDiamond, borderColorDiamond, borderSpade, borderColorSpade, borderClub, borderColorClub, borderStar, borderColorStar, borderMoon, borderColorMoon) => {
-    setHeartColor(heartColor);
-    setClassNameHeart(`flex ${borderHeart} border-${borderColorHeart} rounded-full w-[40px] h-[40px] p-2 justify-center items-center`);
-    
-    setDiamondColor(diamondColor);
-    setClassNameDiamond(`flex ${borderDiamond} border-${borderColorDiamond} rounded-full w-[40px] h-[40px] p-2 justify-center items-center`);
-    
-    setSpadeColor(spadeColor);
-    setClassNameSpade(`flex ${borderSpade} border-${borderColorSpade} rounded-full w-[40px] h-[40px] p-2 justify-center items-center`);
+   // Fonction de comparaison personnalisée pour trier les cartes dans l'ordre voulu
+  const cardOrder = {
+    '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'V': 11, 'D': 12, 'R': 13,
+  };
 
+  const compareCards = (a, b) => {
+    return cardOrder[a.carte] - cardOrder[b.carte];
+  };
 
-    setClubColor(clubColor);
-    setClassNameClub(`flex ${borderClub} border-${borderColorClub} rounded-full w-[40px] h-[40px] p-2 justify-center items-center`);
-
-    setStarColor(starColor);
-    setClassNameStar(`flex ${borderStar} border-${borderColorStar} rounded-full w-[40px] h-[40px] p-2 justify-center items-center`);
-
-    setMoonColor(moonColor);
-    setClassNameMoon(`flex ${borderMoon} border-${borderColorMoon} rounded-full w-[40px] h-[40px] p-2 justify-center items-center`);
-
-  }
-
-
+  
   useEffect(() => {
     (async () => {
       const response = await fetch('https://house-tournament-backend.vercel.app/users');
       const artist = await response.json();
+      
+      artist.artist.sort(compareCards);
       
       const maisonComponents = {
         coeur: [],
@@ -89,39 +78,35 @@ function Home() {
       let diamondTotal = 0;
       let moonTotal = 0;
       let starTotal = 0;
-      let artistComponent;
-      artist.artist.forEach((data, i) => {
-        if (i % 2 === 0 ) {
-        artistComponent = (
-          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={i}>
-            <div className='text-white w-10'>{data.carte}</div>
-            {data.maison === 'coeur' && <Image src='/Coeur_white.svg' width={15} height={15}/>}
-            {data.maison === 'trèfle' && <Image src='/Trefle_white.svg' width={15} height={15}/>}
-            {data.maison === 'pique' && <Image src='/Pique_white.svg' width={15} height={15}/>}
-            {data.maison === 'carreau' && <Image src='/Carreau_white.svg' width={15} height={15}/>}
+
+      const maisonCounters = {
+        coeur: 0,
+        trèfle: 0,
+        pique: 0,
+        carreau: 0,
+        lune: 0,
+        étoile: 0,
+      };
+      
+      artist.artist.forEach((data) => {
+        const maison = data.maison;
+        const isEven = maisonCounters[maison] % 2 === 0;
+        const colorClass = isEven ? 'text-white' : 'text-gray';
+        const artistComponent = (
+          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
+            <div className={`${colorClass} w-10`}>{data.carte}</div>
+            {data.maison === 'coeur' && <Image src='/Coeur_white.svg' width={15} height={15} />}
+            {data.maison === 'trèfle' && <Image src='/Trefle_white.svg' width={15} height={15} />}
+            {data.maison === 'pique' && <Image src='/Pique_white.svg' width={15} height={15} />}
+            {data.maison === 'carreau' && <Image src='/Carreau_white.svg' width={15} height={15} />}
             {data.maison === 'lune' && <Image src='/Lune.svg' width={15} height={15} />}
             {data.maison === 'étoile' && <Image src='/Etoile.svg' width={15} height={15} />}
-            <p className='text-white w-1/2'>{data.pseudo}</p>
-            <div className='text-white w-14 text-left'>{data.points}</div>
+            <p className={`${colorClass} w-1/2`}>{data.pseudo}</p>
+            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
           </div>
-          );
-        }else {
-          artistComponent = (
-            <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={i}>
-              <div className='text-white w-10'>{data.carte}</div>
-              {data.maison === 'coeur' && <Image src='/Coeur_white.svg' width={15} height={15}/>}
-              {data.maison === 'trèfle' && <Image src='/Trefle_white.svg' width={15} height={15}/>}
-              {data.maison === 'pique' && <Image src='/Pique_white.svg' width={15} height={15}/>}
-              {data.maison === 'carreau' && <Image src='/Carreau_white.svg' width={15} height={15}/>}
-              {data.maison === 'lune' && <Image src='/Lune.svg' width={15} height={15} />}
-              {data.maison === 'étoile' && <Image src='/Etoile.svg' width={15} height={15} />}
-              <p className='text-gray w-1/2'>{data.pseudo}</p>
-              <div className='text-gray w-14 text-left'>{data.points}</div>
-            </div>
-            );
-        }
+        );
 
-        switch (data.maison) {
+        switch (maison) {
           case 'coeur':
             heartTotal += data.points;
             maisonComponents.coeur.push(artistComponent);
@@ -147,7 +132,9 @@ function Home() {
             maisonComponents.etoile.push(artistComponent);
             break;
         }
+        maisonCounters[maison]++;
       });
+
 
       setArtistRow(maisonComponents);
       setHeartScore(heartTotal);
@@ -161,6 +148,97 @@ function Home() {
 
   const swiperRef = useRef();
 
+
+  const handleSlideChange = () => {
+    const currentIndex = swiperRef.current.swiper.activeIndex;
+    if (currentIndex === 0) {
+      setClassNameDiamond('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setDiamondColor('#ddb758');
+      setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setHeartColor('#fff')
+      setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setSpadeColor('#fff')
+      setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setClubColor('#fff')
+      setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setStarColor('#fff')
+      setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setMoonColor('#fff')
+
+    } else if (currentIndex === 1){
+      setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setDiamondColor('#fff')
+      setClassNameHeart('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setHeartColor('#ddb758');
+      setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setSpadeColor('#fff')
+      setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setClubColor('#fff')
+      setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setStarColor('#fff')
+      setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setMoonColor('#fff')
+
+    }else if (currentIndex === 2) {
+      setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setDiamondColor('#fff')
+      setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setHeartColor('#fff')
+      setClassNameSpade('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setSpadeColor('#ddb758');
+      setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setClubColor('#fff')
+      setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setStarColor('#fff')
+      setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setMoonColor('#fff')
+
+    }else if (currentIndex === 3) {
+      setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setDiamondColor('#fff')
+      setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setHeartColor('#fff')
+      setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setSpadeColor('#fff');
+      setClassNameClub('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setClubColor('#ddb758')
+      setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setStarColor('#fff')
+      setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setMoonColor('#fff')
+      
+    }
+    else if (currentIndex === 4) {
+      setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setDiamondColor('#fff')
+      setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setHeartColor('#fff')
+      setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setSpadeColor('#fff');
+      setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setClubColor('#fff')
+      setClassNameStar('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setStarColor('#ddb758')
+      setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setMoonColor('#fff')
+      
+    }
+    else if (currentIndex === 5) {
+      setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setDiamondColor('#fff')
+      setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setHeartColor('#fff')
+      setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setSpadeColor('#fff');
+      setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setClubColor('#fff')
+      setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setStarColor('#fff')
+      setClassNameMoon('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setMoonColor('#ddb758')
+      
+    }
+  };
 
   return (
     <div className='w-screen h-screen bg-[url(/main_background.webp)] bg-cover bg-no-repeat landscapes:h-max'>
@@ -180,22 +258,22 @@ function Home() {
       />
       <div className='flex w-screen justify-center mt-8 pb-8'>
         <div className='flex w-4/5 justify-around self-center'>
-          <div className={classNameDiamond} onClick={() => { swiperRef.current.swiper.slideTo(0), changeColor('#fff', 'gold', '#fff', '#fff', '#fff', '#fff', '0', '0', 'border', 'gold', '0', '0', '0', '0',) }}>
+          <div className={classNameDiamond} onClick={() => { swiperRef.current.swiper.slideTo(0) }}>
             <Diamond color={diamondColor} width={30} height={30} />
           </div>
-          <div className={classNameHeart} onClick={() => {swiperRef.current.swiper.slideTo(1), changeColor('gold', '#fff', '#fff', '#fff', '#fff', '#fff', 'border','gold', '0', '0', '0', '0', '0', '0' ) }}>
+          <div className={classNameHeart} onClick={() => {swiperRef.current.swiper.slideTo(1)}}>
             <Heart color={heartColor} width={30} height={30} />
           </div>
-          <div className={classNameSpade} onClick={() => { swiperRef.current.swiper.slideTo(2), changeColor('#fff', '#fff', 'gold', '#fff', '#fff', '#fff', '0', '0', '0', '0', 'border', 'gold','0', '0', '0', '0', '0', '0',) }}>
+          <div className={classNameSpade} onClick={() => { swiperRef.current.swiper.slideTo(2)}}>
             <Spade color={spadeColor} width={30} height={30} />
           </div>
-          <div className={classNameClub} onClick={() => { swiperRef.current.swiper.slideTo(3), changeColor('#fff', '#fff', '#fff', 'gold', '#fff', '#fff', '0', '0', '0', '0', '0', '0', 'border', 'gold', '0', '0', '0', '0',) }}>
+          <div className={classNameClub} onClick={() => { swiperRef.current.swiper.slideTo(3)}}>
             <Club color={clubColor} width={30} height={30} />
           </div>
-          <div className={classNameStar} onClick={() => { swiperRef.current.swiper.slideTo(4), changeColor('#fff', '#fff', '#fff', '#fff', 'gold', '#fff', '0', '0','0', '0', '0', '0', '0', '0', 'border', 'gold', '0', '0',) }}>
+          <div className={classNameStar} onClick={() => { swiperRef.current.swiper.slideTo(4)}}>
             <Star color={starColor} width={30} height={30} />
           </div>
-          <div className={classNameMoon} onClick={() => { swiperRef.current.swiper.slideTo(5), changeColor('#fff', '#fff', '#fff', '#fff', '#fff', 'gold', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'border', 'gold') }}>
+          <div className={classNameMoon} onClick={() => { swiperRef.current.swiper.slideTo(5)}}>
             <Moon color={moonColor} width={30} height={30} />
           </div>
         </div>
@@ -204,10 +282,8 @@ function Home() {
         ref={swiperRef}
         spaceBetween={-10}
         slidesPerView={1}
-        onSlideChange={() => console.log('slide change')}
+        onSlideChange= {handleSlideChange}
         centeredSlides={false}
-        effect='coverFlow'
-        coverflowEffect={{ 'slideShadow': true, 'rotate': 30 }}
         style={{display: 'flex'}}
       >
         <SwiperSlide className= 'w-3/4'>{artistRow.carreau}</SwiperSlide>
