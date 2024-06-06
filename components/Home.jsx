@@ -92,6 +92,7 @@ function Home() {
         const maison = data.maison;
         const isEven = maisonCounters[maison] % 2 === 0;
         const colorClass = isEven ? 'text-white' : 'text-gray';
+        const instagramLink = data.pseudo.startsWith('@') ? `https://www.instagram.com/${data.pseudo.slice(1)}/` : `https://www.instagram.com/${data.pseudo}/`;
         const artistComponent = (
           <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
             <div className={`${colorClass} w-10`}>{data.carte}</div>
@@ -101,7 +102,9 @@ function Home() {
             {data.maison === 'carreau' && <Image src='/Carreau_white.svg' width={15} height={15} />}
             {data.maison === 'lune' && <Image src='/Lune.svg' width={15} height={15} />}
             {data.maison === 'étoile' && <Image src='/Etoile.svg' width={15} height={15} />}
-            <p className={`${colorClass} w-1/2`}>{data.pseudo}</p>
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+            {data.pseudo}
+            </a>
             <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
           </div>
         );
