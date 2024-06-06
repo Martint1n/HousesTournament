@@ -9,4 +9,4 @@ function TestImage() {
   )
 }
 
-export default TestImage
+export default TestImage;
