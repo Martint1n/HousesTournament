@@ -92,7 +92,9 @@ function Home() {
         const maison = data.maison;
         const isEven = maisonCounters[maison] % 2 === 0;
         const colorClass = isEven ? 'text-white' : 'text-gray';
-        const instagramLink = data.pseudo.startsWith('@') ? `https://www.instagram.com/${data.pseudo.slice(1)}/` : `https://www.instagram.com/${data.pseudo}/`;
+        const instagramLink = `instagram://user?username=${data.pseudo.slice(1)}`;
+        const webLink = `https://www.instagram.com/${data.pseudo.slice(1)}/`;
+
         const artistComponent = (
           <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
             <div className={`${colorClass} w-10`}>{data.carte}</div>
