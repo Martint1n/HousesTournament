@@ -169,7 +169,7 @@ console.log(showGoldenCircle)
         </div>
         <div className='pl-3 flex pt-3 pb-3 items-center'>
         <ul className='list-disc pl-3'>
-            <li className='text-xs pr-3'>Likez mon dernier message<br/>sur instagram : <span className='text-xs font-bold'>+5 points</span>
+            <li className='text-xs pr-3'>Liker mon dernier message<br/>sur instagram : <span className='text-xs font-bold'>+5 points</span>
             </li>
         </ul>
         <Image src='/MissionsICON/Coeur_black.svg' height={30} width={30}/>
