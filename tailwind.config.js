@@ -23,6 +23,9 @@ module.exports = {
       'white': '#fff',
       'black': '#000',
       'gray': 'rgb(107 114 128)',
+      'lightGray': 'rgb(242 242 242)',
+      'charcoal': 'rgb(10 20 25)',
+      'red': '#f00',
     },
   },
   fontFamily: {

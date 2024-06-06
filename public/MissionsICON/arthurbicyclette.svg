@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288.79 50.82">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        fill: #fff;
+        font-family: Montserrat-Regular, Montserrat;
+        font-size: 30px;
+      }
+
+      .cls-7 {
+        fill: #02091d;
+        stroke-width: 0px;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-7" width="288.79" height="50.82" rx="12.18" ry="12.18"/>
+      <text class="cls-6" transform="translate(8.2 34.94)"><tspan x="0" y="0">@a</tspan><tspan class="cls-1" x="48.69" y="0">r</tspan><tspan x="61.17" y="0">thu</tspan><tspan class="cls-3" x="113.79" y="0">r</tspan><tspan x="125.58" y="0">bi</tspan><tspan class="cls-3" x="153.99" y="0">c</tspan><tspan class="cls-5" x="170.64" y="0">y</tspan><tspan class="cls-9" x="186.45" y="0">c</tspan><tspan class="cls-2" x="203.1" y="0">le</tspan><tspan class="cls-4" x="229.29" y="0">t</tspan><tspan class="cls-8" x="241.05" y="0">t</tspan><tspan x="252.66" y="0">e</tspan></text>
+    </g>
+  </g>
+</svg>
