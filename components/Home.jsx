@@ -10,8 +10,6 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css/bundle';
 import HouseScore from './HouseScore';
 import Rules from './Rules';
-import GoldenCircle from './GoldenCircle';
-import TestImage from './TestImage'
 
 
 function Home() {
@@ -30,7 +28,6 @@ function Home() {
   const [diamondScore, setDiamondScore] = useState(0);
   const [moonScore, setMoonScore] = useState(0);
   const [starScore, setStarScore] = useState(0);
-  const swiper = useSwiper();
 
   const [heartColor, setHeartColor] = useState('#fff');
   const [spadeColor, setSpadeColor] = useState('#fff');
@@ -248,9 +245,9 @@ function Home() {
   return (
     <div className='w-screen h-screen bg-[url(/main_background.webp)] bg-cover bg-no-repeat landscapes:h-max'>
 
-      <div className='flex items-center justify-center p-2 pb-5'>
-        <Image src={'/Logo.svg'} width={50} height={50} />
-        <h1 className='text-white'>LUNETOILE</h1>
+      <div className='flex items-center justify-center'>
+        <Image src={'/Logo.svg'} width={150} height={150} />
+        <h1 className="text-white text-xl font-['Cormorand_Garamond'] font-semibold">LUNETOILE</h1>
       </div>
 
       <HouseScore
@@ -261,7 +258,7 @@ function Home() {
         moonScore={{ score: moonScore, icon: '/Lune_gold.svg' }}
         starScore={{ score: starScore, icon: '/Etoile_gold.svg' }}
       />
-      <div className='flex w-screen justify-center mt-8 pb-8'>
+      <div className='flex w-screen justify-center mt-4 pb-4'>
         <div className='flex w-4/5 justify-around self-center'>
           <div className={classNameDiamond} onClick={() => { swiperRef.current.swiper.slideTo(0) }}>
             <Diamond color={diamondColor} width={30} height={30} />
