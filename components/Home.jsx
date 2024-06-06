@@ -133,6 +133,24 @@ function Home() {
             starTotal += data.points;
             maisonComponents.etoile.push(artistComponent);
             break;
+          case 'jokerDP':
+            heartTotal += data.points;
+            diamondTotal += data.points;
+            maisonComponents.coeur.push(artistComponent)
+            maisonComponents.carreau.push(artistComponent)
+            break;
+          case 'jokerSC':
+            spadeTotal += data.points;
+            clubTotal += data.points;
+            maisonComponents.pique.push(artistComponent)
+            maisonComponents.trefle.push(artistComponent)
+            break;
+            case 'jokerMS':
+              moonTotal += data.points;
+              starTotal += data.points;
+              maisonComponents.lune.push(artistComponent)
+              maisonComponents.etoile.push(artistComponent)
+              break;
         }
         maisonCounters[maison]++;
       });
