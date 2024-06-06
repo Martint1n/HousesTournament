@@ -76,8 +76,8 @@ const houses = sortedScores.map((data, i) => {
       </div>
       <div className='flex flex-col justify-center items-center ml-2 border-2 border-gold border-solid bg-deep-blue h-full w-2/5 rounded-b-full landscapes:w-1/4'>
         <h2 className='pb-2'>
-          <span style={{display: 'block', color: '#ddb758', textAlign: 'center'}}>TOURNOI</span>
-          <span style={{display: 'block', color: 'white'}}>DES MAISONS</span>
+          <span style={{display: 'block', color: '#ddb758', textAlign: 'center'}} className='font-["Cormorant_Garamond"]'>TOURNOI</span>
+          <span style={{display: 'block', color: 'white'}} className='font-["Cormorant_Garamond"]'>DES MAISONS</span>
         </h2>
         <Image src={'/TDM_Logo.svg'} width={100} height={100}/>
       </div>

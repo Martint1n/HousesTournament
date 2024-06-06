@@ -43,7 +43,7 @@ console.log(showGoldenCircle)
                 </p>
             </div>
             <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-[280px] w-2/5 rounded-b-full landscapes:w-1/4 landscapes:m-auto landscapes:h-2/3'>
-                <h2 className='text-gold pb-2'>MAISONS</h2>
+                <h2 className='font-["Cormorant_Garamond"] text-gold pb-2'>MAISONS</h2>
                 <div className='flex pb-2 justify-between'>
                     <Image src='/Diamond_gold.svg' width={10} height={10}/>
                     <Image src='/Heart_gold.svg' width={10} height={10} />

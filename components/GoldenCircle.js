@@ -7,7 +7,7 @@ function GoldenCircle(props) {
         {props.showGoldenCircle ? 
         <>
           <div className='w-3/5 pl-3 pr-2'>
-            <h2 className='text-gold pb-2 pt-5'>LE CERCLE DORÉ</h2>
+            <h2 className='font-["Cormorant_Garamond"] text-gold pb-2 pt-5'>LE CERCLE DORÉ</h2>
             <p className='text-xs text-gold italic pb-2'>Pour rejoindre le Cercle Doré <span className='text-xs text-gold font-bold italic'>envoyez-moi la photo de profil</span> de votre choix en MP et je vous ajouterai le cercle doré.</p>
             <p className='text-xs text-white pb-2'>Le cercle doré est une initiative qui vise à <span className='text-xs text-white font-bold'>ajouter un cercle doré autour de la photo de profil</span> d'un maximum d'artistes du projet.</p>
             <p className='text-xs text-white pb-2'>Le but est de nous reconnaître plus facilement et de renforcer le sentiment d'appartenance.</p>
