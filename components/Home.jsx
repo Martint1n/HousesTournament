@@ -282,7 +282,7 @@ function Home() {
       </div>
       <Swiper
         ref={swiperRef}
-        spaceBetween={-10}
+        spaceBetween={0}
         slidesPerView={1}
         onSlideChange= {handleSlideChange}
         centeredSlides={false}
