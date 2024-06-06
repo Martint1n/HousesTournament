@@ -14,13 +14,13 @@ console.log(showGoldenCircle)
         <div className='bg-white h-2/5 pt-4 landscapes:h-1/2 landscapes:pt-6'> 
             <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2">LE TOURNOI DES MAISONS</h2>
             <p className='text-xs pl-3 pb-2'>Chers Artisans, </p>
-            <p className='text-xs pl-3 pb-3'>
+            <p className='text-xs pl-3'>
                 Afin de renforcer l'engagement et l'aspect collaboratif du projet.<br/>
-                J'ai décidé de mettre en place un <span className='font-bold'>grand jeu</span> fil rouge appelé <br/>
-                <span className='font-bold'>Tournoi des maisons.</span>
+                J'ai décidé de mettre en place un <span className='font-bold'>grand jeu</span> fil rouge appelé
+                <span className='font-bold'> Tournoi des maisons.</span>
             </p>
         </div>
-        <div className='bg-[url(/main_background.webp)] h-[60vh] bg-cover bg-no-repeat flex flex-row items-center pb-5 mt-5 landscapes:mt-0 landscapes:h-screen'>
+        <div className='bg-[url(/main_background.webp)] bg-cover bg-no-repeat flex flex-row items-center pb-5 mt-5 landscapes:mt-0 landscapes:h-screen'>
             <div className='w-3/5 pr-2 mt-5 pt-3'>
                 <h3 className="font-['Cormorant_Garamond'] font-semibold text-white underline underline-offset-4 pl-3 pb-2 mt-5">POINTS ET MISSIONS</h3>
                 <p className='text-white text-xs pl-3 pb-3'>
@@ -42,9 +42,13 @@ console.log(showGoldenCircle)
                     Tous les <span className='text-white font-bold'>participants impliqués</span> seront récompensés.
                 </p>
             </div>
-            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-3/5 w-2/5 rounded-b-full landscapes:w-1/4 landscapes:m-auto landscapes:h-2/3'>
+            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-[280px] w-2/5 rounded-b-full landscapes:w-1/4 landscapes:m-auto landscapes:h-2/3'>
                 <h2 className='text-gold pb-2'>MAISONS</h2>
-                <div className='flex pb-2'>
+                <div className='flex pb-2 justify-between'>
+                    <Image src='/Diamond_gold.svg' width={10} height={10}/>
+                    <Image src='/Heart_gold.svg' width={10} height={10} />
+                    <Image src='/Pique_gold.svg' width={10} height={10} />
+                    <Image src='/Trefle_gold.svg' width={10} height={10} />
                     <Image src='/Etoile_gold.svg' width={10} height={10} />
                     <Image src='/Lune_gold.svg' width={10} height={10} />
                 </div>

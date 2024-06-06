@@ -243,7 +243,7 @@ function Home() {
   };
 
   return (
-    <div className='w-screen h-screen bg-[url(/main_background.webp)] bg-cover bg-no-repeat landscapes:h-max'>
+    <div className='w-screen bg-[url(/main_background.webp)] bg-cover bg-no-repeat landscapes:h-max'>
 
       <div className='flex items-center justify-center'>
         <Image src={'/Logo.svg'} width={150} height={150} />
