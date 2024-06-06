@@ -27,7 +27,7 @@ module.exports = {
   },
   fontFamily: {
     'sans': ["Monserrat", ...defaultTheme.fontFamily.sans],
-    'display': ['Comorand-Garamond',],
+    'title': ['Comorant Garamond',],
   },
   plugins: [],
 }
