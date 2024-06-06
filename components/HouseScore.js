@@ -71,6 +71,7 @@ const houses = sortedScores.map((data, i) => {
   return (
     <div className='flex h-1/3 w-full justify-center landscapes:h-[280px]'>
       <div className='flex flex-col justify-center items-center mr-2 border border-gold border-solid bg-black h-full w-2/5 rounded-b-full landscapes:w-1/4 landscapes:mr-10'>
+        <Image src='/Crown.svg' width={20} height={40}/>
       {houses}
       </div>
       <div className='flex flex-col justify-center items-center ml-2 border-2 border-gold border-solid bg-deep-blue h-full w-2/5 rounded-b-full landscapes:w-1/4'>
