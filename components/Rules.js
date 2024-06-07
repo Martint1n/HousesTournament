@@ -26,11 +26,9 @@ function Rules() {
             <div className='flex'>
             <div className='w-3/5 pr-2'>
                 <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">POINTS ET MISSIONS</h3>
-                <p className='text-white text-xs pl-3 pb-3'>
-                    Effectuez un maximum de missions pour gagner des points
-                </p>
-                <p className='text-xs text-white pl-3 pb-3'>Les scores seront régulièrement mis à jour sur le site.</p>
-                <h2 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">RECOMPENSES</h2>
+                <p className='text-white text-xs pl-3 pb-5'>
+                    Effectuez un maximum de missions pour gagner des points <br/>Les scores seront régulièrement mis à jour sur le site.</p>
+                <h2 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">RÉCOMPENSES</h2>
                 <p className='text-white text-xs pl-3 pb-2' >
                     La <span className='text-white font-bold'>personne avec le plus haut score </span> 
                     ainsi que la maison avec le plus haut score et tous les 
