@@ -93,7 +93,7 @@ function Home() {
         const webLink = `https://www.instagram.com/${data.pseudo.slice(1)}/`;
 
         const artistComponent = (
-          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
+          <div className='pb-2' style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
             <div className={`${colorClass} w-10`}>{data.carte}</div>
             {data.maison === 'coeur' && <Image src='/Coeur_white.svg' width={15} height={15} />}
             {data.maison === 'trèfle' && <Image src='/Trefle_white.svg' width={15} height={15} />}
