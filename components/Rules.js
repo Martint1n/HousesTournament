@@ -21,10 +21,11 @@ function Rules() {
             </p>
         </div>
         </div>
-        <div className='bg-[url(/main_background.webp)] pt-5 bg-cover bg-no-repeat flex flex-row items-center pb-5 landscapes:mt-0 landscapes:h-screen'>
-            <div className='w-3/5 pr-2 mt-5'>
-                <h2 className='font-["Cormorant_Garamond"] font-semibold text-white pl-3 pb-3'>LES RÈGLES</h2>
-                <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 mt-5 font-semibold">POINTS ET MISSIONS</h3>
+        <div className='bg-[url(/main_background.webp)] pt-10 pb-10 bg-cover bg-no-repeat flex flex-col items-center landscapes:mt-0 landscapes:h-screen'>
+            <h2 className='font-["Cormorant_Garamond"] font-semibold text-white pl-3 pb-5 self-center'>LES RÈGLES</h2>
+            <div className='flex'>
+            <div className='w-3/5 pr-2'>
+                <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">POINTS ET MISSIONS</h3>
                 <p className='text-white text-xs pl-3 pb-3'>
                     Effectuez un maximum de missions pour gagner des points
                 </p>
@@ -48,6 +49,7 @@ function Rules() {
                 </div>
                 <p className='text-gold text-xs pb-1'>vous êtes <span className='text-gold font-bold'>affilié à une maison</span> en fonction de la carte que vous avez illustrée</p>
                 <p className='text-gold text-xs'>le cumul des points des membres d'une maison constitue un <span className='text-gold font-bold'>score de maison</span></p>
+                </div>
             </div>
         </div>
         <div className='w-screen flex'>
