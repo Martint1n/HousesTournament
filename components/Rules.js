@@ -16,34 +16,27 @@ function Rules() {
             <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
             <p className='text-xs pl-3'>
                 Afin de renforcer l'engagement et l'aspect collaboratif du projet.<br/>
-                J'ai décidé de mettre en place un <span className='font-bold'>grand jeu</span> fil rouge appelé
+                Je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
                 <span className='text-xs font-bold'> Tournoi des maisons.</span>
             </p>
         </div>
-        <div className='bg-[url(/main_background.webp)] bg-cover bg-no-repeat flex flex-row items-center pb-5 landscapes:mt-0 landscapes:h-screen'>
+        <div className='bg-[url(/main_background.webp)] pt-5 bg-cover bg-no-repeat flex flex-row items-center pb-5 landscapes:mt-0 landscapes:h-screen'>
             <div className='w-3/5 pr-2 mt-5 pt-3'>
+                <h2 className='font-["Cormorant_Garamond"] font-semibold text-white pl-3'>LES RÈGLES</h2>
                 <h3 className="font-['Cormorant_Garamond'] font-semibold text-white underline underline-offset-4 pl-3 pb-2 mt-5">POINTS ET MISSIONS</h3>
                 <p className='text-white text-xs pl-3 pb-3'>
-                    Vous <span className='text-white font-bold'>gagnez des points</span> en fonction de vos interactions
-                    avec les stories et avec les autres artisans Lunétoile.
+                    Effectuez un maximum de missions pour gagner des points
                 </p>
-                <p className='text-xs font-bold text-white pl-3 pb-3'>Consultez la liste des missions pour connaître toutes les manières de gagner des points.</p>
                 <p className='text-xs text-white pl-3 pb-3'>Les scores seront régulièrement mis à jour sur le site.</p>
                 <h2 className="font-['Cormorant_Garamond'] font-bold text-white pl-3 pb-2 underline underline-offset-4">RECOMPENSES</h2>
                 <p className='text-white text-xs pl-3 pb-2' >
-                    La <span className='text-white font-bold'>personne avec le plus haut score</span> individuel
-                    sera récompensée <br/>(détails à venir).
-                </p>
-                <p className='text-white text-xs pl-3 pb-2'>
-                    L'ensemble des <span className='text-white font-bold '>membres de la maison</span> avec
-                    le plus haut score sera récompensé <br/>(détails à venir).
-                </p>
-                <p className='text-white text-xs pl-3 pb-5'>
-                    Tous les <span className='text-white font-bold'>participants impliqués</span> seront récompensés.
+                    La <span className='text-white font-bold'>personne avec le plus haut score </span> 
+                    ainsi que la maison avec le plus haut score et tous les 
+                    <span className='text-white font-bold'> participants investis </span>seront récompensés.
                 </p>
             </div>
-            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-[280px] w-2/5 rounded-b-full landscapes:w-1/4 landscapes:m-auto landscapes:h-2/3'>
-                <h2 className='font-["Cormorant_Garamond"] text-gold pb-2'>MAISONS</h2>
+            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-[280px] w-2/5 rounded-b-full landscapes:w-1/5 landscapes:m-auto landscapes:h-4/5'>
+                <h2 className='font-["Cormorant_Garamond"] text-gold pb-2 self-center'>MAISONS</h2>
                 <div className='flex pb-2 justify-between'>
                     <Image src='/Diamond_gold.svg' width={10} height={10}/>
                     <Image src='/Heart_gold.svg' width={10} height={10} />
@@ -57,27 +50,19 @@ function Rules() {
             </div>
         </div>
         <div className='w-screen flex'>
-            <div className='pl-3 mt-5 w-3/5'>
-                <p className="font-['Cormorant_Garamond'] font-bold pt-2">PRINCIPE DES STORIES</p>
+            <div className='pl-3 pr-3 mt-5 w-3/5'>
+                <p className="font-['Cormorant_Garamond'] font-bold pt-2">STORY</p>
                 <p className='pt-2 text-xs'>Les stories seront 
                 <span className='text-xs font-bold'> quotidiennes </span> 
                 et alterneront entre 
                 <span className='text-xs font-bold'> teasers et révélations </span> 
-                de cartes. <br/>
-                Tous les deux jours, une nouvelle carte sera révélée et sera précédée d'un teaser pour créer de l'anticipation.
                 </p>
-                <p className='text-xs pt-2'>Les teasers montreront une image assombrie et 
-                <span className='text-xs font-bold'> vous pourrez deviner de quelle carte il s'agit.</span> 
-                </p>
-                <p className='pt-2 text-xs'>Le lendemain, 
-                <span className='text-xs font-bold'> la carte complète sera dévoilée </span> 
-                avec un tag de l'artiste qui l'a illustrée.</p>
                 <p className='text-xs pt-2 pb-3'><span className='text-xs font-bold'>Participez </span> 
                 activement aux stories pour 
-                <span className='text-xs font-bold'> accumuler des points </span> 
-                pour vous et votre maison !</p>
+                <span className='text-xs font-bold'> accumuler des points !</span> 
+                </p>
             </div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pt-5 pb-5'>
                 <p className='text-gold'>J1</p>
                 <Image src='/story1.svg' width={100} height={200}/>
             </div>
