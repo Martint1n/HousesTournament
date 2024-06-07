@@ -11,13 +11,15 @@ function Rules() {
     console.log(showGoldenCircle)
   return (
     <div className='h-[45vh] w-screen mt-10 landscapes:h-[80vh]'>
-        <div className='bg-white h-2/5 pt-4 pb-4 landscapes:h-1/2 landscapes:pt-6'> 
+        <div className='bg-white h-2/5 pt-4 pb-4 landscapes:h-1/2 landscapes:pt-6 flex justify-center'> 
+            <div className='h-full w-2/3 flex flex-col justify-center'>
             <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2">LE TOURNOI DES MAISONS</h2>
             <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
             <p className='text-xs pl-3'>
                 Afin de renforcer l'engagement et l'aspect collaboratif du projet, je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
                 <span className='text-xs font-bold'> Tournoi des maisons.</span>
             </p>
+        </div>
         </div>
         <div className='bg-[url(/main_background.webp)] pt-5 bg-cover bg-no-repeat flex flex-row items-center pb-5 landscapes:mt-0 landscapes:h-screen'>
             <div className='w-3/5 pr-2 mt-5'>
