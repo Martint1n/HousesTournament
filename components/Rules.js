@@ -56,25 +56,35 @@ function Rules() {
                 <p className='text-gold text-xs'>le cumul des points des 13 personnes d'une maison constitue un <span className='text-gold font-bold'>score de maison</span></p>
             </div>
         </div>
-        <div className='pl-3 mt-5 w-3/5'>
-            <p className="font-['Cormorant_Garamond'] font-bold pt-2">PRINCIPE DES STORIES</p>
-            <p className='pt-2 text-xs'>Les stories seront 
-            <span className='text-xs font-bold'> quotidiennes </span> 
-            et alterneront entre 
-            <span className='text-xs font-bold'> teasers et révélations </span> 
-            de cartes. <br/>
-            Tous les deux jours, une nouvelle carte sera révélée et sera précédée d'un teaser pour créer de l'anticipation.
-            </p>
-            <p className='text-xs pt-2'>Les teasers montreront une image assombrie et 
-            <span className='text-xs font-bold'> vous pourrez deviner de quelle carte il s'agit.</span> 
-            </p>
-            <p className='pt-2 text-xs'>Le lendemain, 
-            <span className='text-xs font-bold'> la carte complète sera dévoilée </span> 
-            avec un tag de l'artiste qui l'a illustrée.</p>
-            <p className='text-xs pt-2 pb-3'><span className='text-xs font-bold'>Participez </span> 
-            activement aux stories pour 
-            <span className='text-xs font-bold'> accumuler des points </span> 
-            pour vous et votre maison !</p>
+        <div className='w-screen flex'>
+            <div className='pl-3 mt-5 w-3/5'>
+                <p className="font-['Cormorant_Garamond'] font-bold pt-2">PRINCIPE DES STORIES</p>
+                <p className='pt-2 text-xs'>Les stories seront 
+                <span className='text-xs font-bold'> quotidiennes </span> 
+                et alterneront entre 
+                <span className='text-xs font-bold'> teasers et révélations </span> 
+                de cartes. <br/>
+                Tous les deux jours, une nouvelle carte sera révélée et sera précédée d'un teaser pour créer de l'anticipation.
+                </p>
+                <p className='text-xs pt-2'>Les teasers montreront une image assombrie et 
+                <span className='text-xs font-bold'> vous pourrez deviner de quelle carte il s'agit.</span> 
+                </p>
+                <p className='pt-2 text-xs'>Le lendemain, 
+                <span className='text-xs font-bold'> la carte complète sera dévoilée </span> 
+                avec un tag de l'artiste qui l'a illustrée.</p>
+                <p className='text-xs pt-2 pb-3'><span className='text-xs font-bold'>Participez </span> 
+                activement aux stories pour 
+                <span className='text-xs font-bold'> accumuler des points </span> 
+                pour vous et votre maison !</p>
+            </div>
+            <div className='flex flex-col items-center justify-center'>
+                <p className='text-gold'>J1</p>
+                <Image src='/story1.svg' width={100} height={200}/>
+            </div>
+            <div className='flex flex-col items-center justify-center pl-2 pr-2'>
+                <p className='text-gold'>J2</p>
+                <Image src='/story2.svg' width={100} height={200}/>
+            </div>
         </div>
         <GoldenCircle showGoldenCircle={true} /> 
         <div className='bg-deep-blue w-screen flex pt-5 pb-5 justify-center'>
@@ -181,7 +191,7 @@ function Rules() {
             <div className='flex pl-3 pr-3 justify-between'>
                 <p className='text-xs text-white leading-5'>Actions entrainant<br/>une perte de points</p>
                 <div className=' flex justify-center items-center w-[35px] h-[40px] border-2 border-red rounded-b-full'>
-                    <FontAwesomeIcon icon={faExclamation} width={5} height={30} color='red'/>
+                    <FontAwesomeIcon icon={faExclamation} width={5} height={30} color='#800020'/>
                 </div>
                 <div className='w-1/3 landscapes:w-1/6'></div>
             </div>
