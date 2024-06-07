@@ -12,8 +12,8 @@ function Rules() {
   return (
     <div className='h-[45vh] w-screen mt-10 landscapes:h-[80vh]'>
         <div className='bg-white h-2/5 pt-4 pb-4 landscapes:h-1/2 landscapes:pt-6 flex justify-center'> 
-            <div className='h-full w-2/3 flex flex-col justify-center'>
-            <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2">LE TOURNOI DES MAISONS</h2>
+            <div className='h-full w-4/5 flex flex-col justify-center'>
+            <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2 text-2xl">LE TOURNOI DES MAISONS</h2>
             <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
             <p className='text-xs pl-3'>
                 Afin de renforcer l'engagement et l'aspect collaboratif du projet, je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
@@ -22,18 +22,22 @@ function Rules() {
         </div>
         </div>
         <div className='bg-[url(/main_background.webp)] pt-10 pb-10 bg-cover bg-no-repeat flex flex-col items-center landscapes:mt-0 landscapes:h-screen'>
-            <h2 className='font-["Cormorant_Garamond"] font-semibold text-white pl-3 pb-5 self-center'>LES RÈGLES</h2>
-            <div className='flex'>
-            <div className='w-3/5 pr-2'>
-                <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">POINTS ET MISSIONS</h3>
-                <p className='text-white text-xs pl-3 pb-5'>
+            <h2 className='font-["Cormorant_Garamond"] font-semibold text-white text-2xl pl-3 pb-10 self-center'>LES RÈGLES</h2>
+            <div className='flex '>
+            <div className=' flex flex-col justify-between w-3/5 pr-2'>
+                <div>
+                    <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">POINTS ET MISSIONS</h3>
+                    <p className='text-white text-xs pl-3 pb-5'>
                     Effectuez un maximum de missions pour gagner des points <br/>Les scores seront régulièrement mis à jour sur le site.</p>
-                <h2 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">RÉCOMPENSES</h2>
-                <p className='text-white text-xs pl-3 pb-2' >
-                    La <span className='text-white font-bold'>personne avec le plus haut score </span> 
-                    ainsi que la maison avec le plus haut score et tous les 
-                    <span className='text-white font-bold'> participants investis </span>seront récompensés.
-                </p>
+                </div>
+                <div>
+                    <h2 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">RÉCOMPENSES</h2>
+                    <p className='text-white text-xs pl-3 pb-2' >
+                        La <span className='text-white font-bold'>personne avec le plus haut score </span> 
+                        ainsi que la maison avec le plus haut score et tous les 
+                        <span className='text-white font-bold'> participants investis </span>seront récompensés.
+                    </p>
+                </div>
             </div>
             <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-[280px] w-2/5 rounded-b-full landscapes:w-1/5 landscapes:m-auto landscapes:h-4/5'>
                 <h2 className='font-["Cormorant_Garamond"] text-gold pb-2 self-center'>MAISONS</h2>
@@ -74,7 +78,7 @@ function Rules() {
         </div>
         <GoldenCircle showGoldenCircle={true} /> 
         <div className='bg-gold flex justify-center pt-5 pb-5'>
-            <p className='font-bold font-["Cormorant_Garamond"]'>LISTE DES MISSIONS</p>
+            <p className='font-bold font-["Cormorant_Garamond"] text-2xl'>LISTE DES MISSIONS</p>
         </div>
         <div className='bg-deep-blue w-screen flex pt-5 pb-5 justify-center'>
             <h2 className="text-gold font-['Cormorant_Garamond'] font-semibold">ENGAGEMENT STORY</h2>
