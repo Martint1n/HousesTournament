@@ -15,8 +15,7 @@ function Rules() {
             <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2">LE TOURNOI DES MAISONS</h2>
             <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
             <p className='text-xs pl-3'>
-                Afin de renforcer l'engagement et l'aspect collaboratif du projet<br/>
-                je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
+                Afin de renforcer l'engagement et l'aspect collaboratif du projet, je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
                 <span className='text-xs font-bold'> Tournoi des maisons.</span>
             </p>
         </div>
