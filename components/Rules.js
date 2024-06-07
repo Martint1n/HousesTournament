@@ -12,13 +12,13 @@ function Rules() {
   return (
     <div className='h-[45vh] w-screen mt-10 landscapes:h-[80vh]'>
         <div className='bg-white h-2/5 pt-4 pb-4 landscapes:h-1/2 landscapes:pt-6 flex justify-center'> 
-            <div className='h-full w-4/5 flex flex-col justify-center'>
-            <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2 text-2xl">LE TOURNOI DES MAISONS</h2>
-            <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
-            <p className='text-xs pl-3'>
-                Afin de renforcer l'engagement et l'aspect collaboratif du projet, je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
-                <span className='text-xs font-bold'> Tournoi des maisons.</span>
-            </p>
+            <div className='h-full flex flex-col justify-center items-center'>
+                <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2 text-2xl">LE TOURNOI DES MAISONS</h2>
+                <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
+                <p className='text-xs pl-3'>
+                    Afin de renforcer l'engagement et l'aspect collaboratif du projet, je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
+                    <span className='text-xs font-bold'> Tournoi des maisons.</span>
+                </p>
         </div>
         </div>
         <div className='bg-[url(/main_background.webp)] pt-10 pb-10 bg-cover bg-no-repeat flex flex-col items-center landscapes:mt-0 landscapes:h-screen'>
