@@ -72,7 +72,7 @@ function Rules() {
         </div>
         <GoldenCircle showGoldenCircle={true} /> 
         <div className='bg-gold flex justify-center pt-5 pb-5'>
-            <p className='font-semibold font-["Cormorant_Garamond"]'>LISTE DES MISSIONS</p>
+            <p className='font-bold font-["Cormorant_Garamond"]'>LISTE DES MISSIONS</p>
         </div>
         <div className='bg-deep-blue w-screen flex pt-5 pb-5 justify-center'>
             <h2 className="text-gold font-['Cormorant_Garamond'] font-semibold">ENGAGEMENT STORY</h2>
