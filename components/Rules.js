@@ -20,14 +20,14 @@ function Rules() {
             </p>
         </div>
         <div className='bg-[url(/main_background.webp)] pt-5 bg-cover bg-no-repeat flex flex-row items-center pb-5 landscapes:mt-0 landscapes:h-screen'>
-            <div className='w-3/5 pr-2 mt-5 pt-3'>
-                <h2 className='font-["Cormorant_Garamond"] font-semibold text-white pl-3'>LES RÈGLES</h2>
-                <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 mt-5">POINTS ET MISSIONS</h3>
+            <div className='w-3/5 pr-2 mt-5'>
+                <h2 className='font-["Cormorant_Garamond"] font-semibold text-white pl-3 pb-3'>LES RÈGLES</h2>
+                <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 mt-5 font-semibold">POINTS ET MISSIONS</h3>
                 <p className='text-white text-xs pl-3 pb-3'>
                     Effectuez un maximum de missions pour gagner des points
                 </p>
                 <p className='text-xs text-white pl-3 pb-3'>Les scores seront régulièrement mis à jour sur le site.</p>
-                <h2 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 ">RECOMPENSES</h2>
+                <h2 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">RECOMPENSES</h2>
                 <p className='text-white text-xs pl-3 pb-2' >
                     La <span className='text-white font-bold'>personne avec le plus haut score </span> 
                     ainsi que la maison avec le plus haut score et tous les 
@@ -71,6 +71,9 @@ function Rules() {
             </div>
         </div>
         <GoldenCircle showGoldenCircle={true} /> 
+        <div className='bg-gold flex justify-center pt-5 pb-5'>
+            <p className='font-semibold font-["Cormorant_Garamond"]'>LISTE DE MISSIONS</p>
+        </div>
         <div className='bg-deep-blue w-screen flex pt-5 pb-5 justify-center'>
             <h2 className="text-gold font-['Cormorant_Garamond'] font-semibold">ENGAGEMENT STORY</h2>
         </div>
