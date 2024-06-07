@@ -15,10 +15,12 @@ function Rules() {
             <div className='h-full flex flex-col justify-center items-center'>
                 <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2 text-2xl">LE TOURNOI DES MAISONS</h2>
                 <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
-                <p className='text-xs pl-3'>
-                    Afin de renforcer l'engagement et l'aspect collaboratif du projet, je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
-                    <span className='text-xs font-bold'> Tournoi des maisons.</span>
-                </p>
+                <div className='w-3/4'>
+                    <p className='text-xs pl-3'>
+                        Afin de renforcer l'engagement et l'aspect collaboratif du projet, je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
+                        <span className='text-xs font-bold'> Tournoi des maisons.</span>
+                    </p>
+                </div>
         </div>
         </div>
         <div className='bg-[url(/main_background.webp)] pt-10 pb-10 bg-cover bg-no-repeat flex flex-col items-center landscapes:mt-0 landscapes:h-screen'>
@@ -49,9 +51,7 @@ function Rules() {
                     <Image src='/Etoile_gold.svg' width={10} height={10} />
                     <Image src='/Lune_gold.svg' width={10} height={10} />
                 </div>
-                <p className='text-gold text-xs pb-1'>vous êtes <span className='text-gold font-bold'>affilié à une maison</span> en fonction de la carte que vous avez illustrée</p>
-                <p className='text-gold text-xs'>le cumul des points des membres d'une maison constitue un <span className='text-gold font-bold'>score de maison</span></p>
-                </div>
+                <p className='text-gold text-xs pb-1'>vous êtes <span className='text-gold font-bold'>affilié à une maison</span> en fonction de la carte que vous avez illustrée</p>                </div>
             </div>
         </div>
         <div className='w-screen flex'>
