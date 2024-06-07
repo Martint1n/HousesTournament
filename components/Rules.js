@@ -28,12 +28,8 @@ function Rules() {
             <div className='flex '>
             <div className=' flex flex-col justify-between w-3/5 pr-2'>
                 <div>
-                    <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">POINTS ET MISSIONS</h3>
-                    <p className='text-white text-xs pl-3 pb-5'>
-                    Effectuez un maximum de missions pour gagner des points <br/>Les scores seront régulièrement mis à jour sur le site.</p>
-                </div>
-                <div>
-                    <h2 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 font-semibold">RÉCOMPENSES</h2>
+                    <p className='text-white text-xs pl-3 pb-5'>Effectuez un maximum de missions pour gagner des points.</p>
+                    <p className='text-white text-xs pl-3 pb-5'>Les scores seront régulièrement mis à jour sur le site.</p>
                     <p className='text-white text-xs pl-3 pb-2' >
                         La <span className='text-white font-bold'>personne avec le plus haut score </span> 
                         ainsi que la maison avec le plus haut score et tous les 
@@ -41,8 +37,8 @@ function Rules() {
                     </p>
                 </div>
             </div>
-            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-[280px] w-2/5 rounded-b-full landscapes:w-1/5 landscapes:m-auto landscapes:h-4/5'>
-                <h2 className='font-["Cormorant_Garamond"] text-gold pb-2 self-center'>MAISONS</h2>
+            <div className='pl-2 pr-2 pt-4 flex flex-col mr-2 border border-gold border-solid bg-black h-[200px] w-2/5 rounded-b-full landscapes:w-1/5 landscapes:m-auto landscapes:h-4/5'>
+                <h2 className='font-["Cormorant_Garamond"] text-gold pb-2 self-center font-bold'>MAISONS</h2>
                 <div className='flex pb-2 justify-between'>
                     <Image src='/Diamond_gold.svg' width={10} height={10}/>
                     <Image src='/Heart_gold.svg' width={10} height={10} />
