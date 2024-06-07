@@ -28,7 +28,7 @@ function Rules() {
                     Effectuez un maximum de missions pour gagner des points
                 </p>
                 <p className='text-xs text-white pl-3 pb-3'>Les scores seront régulièrement mis à jour sur le site.</p>
-                <h2 className="font-['Cormorant_Garamond'] test-sm text-white pl-3 pb-2 ">RECOMPENSES</h2>
+                <h2 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 ">RECOMPENSES</h2>
                 <p className='text-white text-xs pl-3 pb-2' >
                     La <span className='text-white font-bold'>personne avec le plus haut score </span> 
                     ainsi que la maison avec le plus haut score et tous les 
