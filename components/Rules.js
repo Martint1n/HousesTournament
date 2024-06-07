@@ -13,7 +13,7 @@ function Rules() {
     <div className='h-[45vh] w-screen mt-10 landscapes:h-[80vh]'>
         <div className='bg-white h-[50vh] pt-4 pb-4 landscapes:h-1/2 landscapes:pt-6 flex justify-center'> 
             <div className='h-full flex flex-col justify-center items-center'>
-                <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2 text-2xl">LE TOURNOI DES MAISONS</h2>
+                <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-12 text-2xl">LE TOURNOI DES MAISONS</h2>
                 <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
                 <div className='w-3/4'>
                     <p className='text-xs pl-3'>
