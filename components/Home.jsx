@@ -136,20 +136,64 @@ function Home() {
           case 'jokerDP':
             heartTotal += data.points;
             diamondTotal += data.points;
-            maisonComponents.coeur.push(artistComponent)
-            maisonComponents.carreau.push(artistComponent)
+            maisonComponents.coeur.push(<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
+            <div className={`${colorClass} w-10`}>{data.carte}</div>
+              <Image src='/Coeur_white.svg' width={15} height={15} />
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+            {data.pseudo}
+            </a>
+            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
+          </div>)
+            maisonComponents.carreau.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
+            <div className={`${colorClass} w-10`}>{data.carte}</div>
+              <Image src='/Carreau_white.svg' width={15} height={15} />
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+            {data.pseudo}
+            </a>
+            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
+          </div>))
             break;
+            
           case 'jokerSC':
             spadeTotal += data.points;
             clubTotal += data.points;
-            maisonComponents.pique.push(artistComponent)
-            maisonComponents.trefle.push(artistComponent)
+            maisonComponents.pique.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
+            <div className={`${colorClass} w-10`}>{data.carte}</div>
+              <Image src='/Pique_white.svg' width={15} height={15} />
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+            {data.pseudo}
+            </a>
+            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
+          </div>))
+            maisonComponents.trefle.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
+            <div className={`${colorClass} w-10`}>{data.carte}</div>
+              <Image src='/Trefle_white.svg' width={15} height={15} />
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+            {data.pseudo}
+            </a>
+            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
+          </div>))
             break;
+
             case 'jokerMS':
               moonTotal += data.points;
               starTotal += data.points;
-              maisonComponents.lune.push(artistComponent)
-              maisonComponents.etoile.push(artistComponent)
+              maisonComponents.lune.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
+              <div className={`${colorClass} w-10`}>{data.carte}</div>
+                <Image src='/Lune.svg' width={15} height={15} />
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+              {data.pseudo}
+              </a>
+              <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
+            </div>))
+              maisonComponents.etoile.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
+              <div className={`${colorClass} w-10`}>{data.carte}</div>
+                <Image src='/Etoile.svg' width={15} height={15} />
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+              {data.pseudo}
+              </a>
+              <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
+            </div>))
               break;
         }
         maisonCounters[maison]++;
