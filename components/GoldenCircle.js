@@ -7,10 +7,10 @@ function GoldenCircle(props) {
         {props.showGoldenCircle ? 
         <>
           <div className='w-3/5 pt-5 pl-3 pr-2'>
-            <h2 className='font-["Cormorant_Garamond"] text-white pb-2 pt-5'>LE CERCLE DORÉ</h2>
+            <h2 className='font-["Cormorant_Garamond"] font-semibold text-white pb-2 pt-5'>LE CERCLE DORÉ</h2>
             <p className='text-xs text-white pb-2'>Pour<span className='text-xs text-white font-bold'> nous reconnaître </span>
             et renforcer le
-            <span className='text-xs text-white font-bold'> sentiment d'appartenance ajoutons un cercle doré autour de nos phots de profil. </span>
+            <span className='text-xs text-white font-bold'> sentiment d'appartenance ajoutons un cercle doré autour de nos photos de profil. </span>
             </p>
             <p className='text-xs text-gold italic pb-2'>Pour rejoindre le Cercle Doré <span className='text-xs text-gold font-bold italic'>envoyez-moi votre photo de profil</span> en MP.</p>
           </div>

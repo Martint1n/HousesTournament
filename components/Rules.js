@@ -15,20 +15,20 @@ function Rules() {
             <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-2">LE TOURNOI DES MAISONS</h2>
             <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
             <p className='text-xs pl-3'>
-                Afin de renforcer l'engagement et l'aspect collaboratif du projet.<br/>
-                Je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
+                Afin de renforcer l'engagement et l'aspect collaboratif du projet<br/>
+                je lance un <span className='font-bold'>grand jeu</span> fil rouge appelé
                 <span className='text-xs font-bold'> Tournoi des maisons.</span>
             </p>
         </div>
         <div className='bg-[url(/main_background.webp)] pt-5 bg-cover bg-no-repeat flex flex-row items-center pb-5 landscapes:mt-0 landscapes:h-screen'>
             <div className='w-3/5 pr-2 mt-5 pt-3'>
                 <h2 className='font-["Cormorant_Garamond"] font-semibold text-white pl-3'>LES RÈGLES</h2>
-                <h3 className="font-['Cormorant_Garamond'] font-semibold text-white underline underline-offset-4 pl-3 pb-2 mt-5">POINTS ET MISSIONS</h3>
+                <h3 className="font-['Cormorant_Garamond'] text-sm text-white pl-3 pb-2 mt-5">POINTS ET MISSIONS</h3>
                 <p className='text-white text-xs pl-3 pb-3'>
                     Effectuez un maximum de missions pour gagner des points
                 </p>
                 <p className='text-xs text-white pl-3 pb-3'>Les scores seront régulièrement mis à jour sur le site.</p>
-                <h2 className="font-['Cormorant_Garamond'] font-bold text-white pl-3 pb-2 underline underline-offset-4">RECOMPENSES</h2>
+                <h2 className="font-['Cormorant_Garamond'] test-sm text-white pl-3 pb-2 ">RECOMPENSES</h2>
                 <p className='text-white text-xs pl-3 pb-2' >
                     La <span className='text-white font-bold'>personne avec le plus haut score </span> 
                     ainsi que la maison avec le plus haut score et tous les 
@@ -46,7 +46,7 @@ function Rules() {
                     <Image src='/Lune_gold.svg' width={10} height={10} />
                 </div>
                 <p className='text-gold text-xs pb-1'>vous êtes <span className='text-gold font-bold'>affilié à une maison</span> en fonction de la carte que vous avez illustrée</p>
-                <p className='text-gold text-xs'>le cumul des points des 13 personnes d'une maison constitue un <span className='text-gold font-bold'>score de maison</span></p>
+                <p className='text-gold text-xs'>le cumul des points des membres d'une maison constitue un <span className='text-gold font-bold'>score de maison</span></p>
             </div>
         </div>
         <div className='w-screen flex'>
