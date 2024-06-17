@@ -26,6 +26,7 @@ module.exports = {
       'lightGray': 'rgb(242 242 242)',
       'charcoal': 'rgb(10 20 25)',
       'red': '#800020',
+      'urlInsta': '#0000EE'
     },
   },
   fontFamily: {

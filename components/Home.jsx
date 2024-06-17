@@ -87,24 +87,25 @@ function Home() {
       
       artist.artist.forEach((data) => {
         const maison = data.maison;
-        const isEven = maisonCounters[maison] % 2 === 0;
-        const colorClass = isEven ? 'text-white' : 'text-gray';
         const instagramLink = `instagram://user?username=${data.pseudo.slice(1)}`;
         const webLink = `https://www.instagram.com/${data.pseudo.slice(1)}/`;
 
         const artistComponent = (
-          <div className='pb-2' style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
-            <div className={`${colorClass} w-10`}>{data.carte}</div>
-            {data.maison === 'coeur' && <Image src='/Coeur_white.svg' width={15} height={15} />}
-            {data.maison === 'trèfle' && <Image src='/Trefle_white.svg' width={15} height={15} />}
-            {data.maison === 'pique' && <Image src='/Pique_white.svg' width={15} height={15} />}
-            {data.maison === 'carreau' && <Image src='/Carreau_white.svg' width={15} height={15} />}
-            {data.maison === 'lune' && <Image src='/Lune.svg' width={15} height={15} />}
-            {data.maison === 'étoile' && <Image src='/Etoile.svg' width={15} height={15} />}
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+          <div className='flex justify-center'>
+          <div className='pb-2 pt-2 flex justify-center items-center border-b border-gray w-[90vw]' key={`${maison}-${maisonCounters[maison]}`}>
+            <div className='w-10 mr-3 flex justify-around'>{data.carte}
+              {data.maison === 'coeur' && <Image src='/Coeur.svg' width={15} height={15} />}
+              {data.maison === 'trèfle' && <Image src='/Trefle.svg' width={15} height={15} />}
+              {data.maison === 'pique' && <Image src='/Pique.svg' width={15} height={15} />}
+              {data.maison === 'carreau' && <Image src='/Carreau.svg' width={15} height={15} />}
+              {data.maison === 'lune' && <Image src='/Lune_gold.svg' width={15} height={15} />}
+              {data.maison === 'étoile' && <Image src='/Etoile_gold.svg' width={15} height={15} />}
+            </div>
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2 italic`}>
             {data.pseudo}
             </a>
-            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
+            <div className='w-14 text-right ml-3'>{data.points}</div>
+          </div>
           </div>
         );
 
@@ -136,64 +137,84 @@ function Home() {
           case 'jokerDP':
             heartTotal += data.points;
             diamondTotal += data.points;
-            maisonComponents.coeur.push(<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
-            <div className={`${colorClass} w-10`}>{data.carte}</div>
-              <Image src='/Coeur_white.svg' width={15} height={15} />
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
-            {data.pseudo}
-            </a>
-            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
+            maisonComponents.coeur.push(<div className='flex justify-center'>
+              <div className='pb-2 pt-2 flex justify-center items-center border-b border-gray w-[90vw]' key={`${maison}-${maisonCounters[maison]}`}>
+              <div className='w-10 mr-3 flex justify-around '>
+                {data.carte}
+                <Image src='/Coeur.svg' width={15} height={15} />
+              </div>
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta italic w-1/2`}>
+              {data.pseudo}
+              </a>
+              <div className='w-14 text-right ml-3'>{data.points}</div>
+            </div>
           </div>)
-            maisonComponents.carreau.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
-            <div className={`${colorClass} w-10`}>{data.carte}</div>
-              <Image src='/Carreau_white.svg' width={15} height={15} />
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
+            maisonComponents.carreau.push(<div className='flex justify-center'>
+              <div className='pb-2 pt-2 flex justify-center items-center border-b border-gray w-[90vw]' key={`${maison}-${maisonCounters[maison]}`}>
+              <div className='w-10 mr-3 flex justify-around'>
+              {data.carte}
+              <Image src='/Carreau.svg' width={15} height={15} />
+            </div>
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
             {data.pseudo}
             </a>
-            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
-          </div>))
+            <div className='w-14 text-right ml-3'>{data.points}</div>
+            </div>
+          </div>)
             break;
             
           case 'jokerSC':
             spadeTotal += data.points;
             clubTotal += data.points;
-            maisonComponents.pique.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
-            <div className={`${colorClass} w-10`}>{data.carte}</div>
-              <Image src='/Pique_white.svg' width={15} height={15} />
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
-            {data.pseudo}
-            </a>
-            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
-          </div>))
-            maisonComponents.trefle.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
-            <div className={`${colorClass} w-10`}>{data.carte}</div>
-              <Image src='/Trefle_white.svg' width={15} height={15} />
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
-            {data.pseudo}
-            </a>
-            <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
-          </div>))
+            maisonComponents.pique.push(<div className='flex justify-center'>
+              <div className='pb-2 pt-2 flex justify-center items-center border-b border-gray w-[90vw]' key={`${maison}-${maisonCounters[maison]}`}>
+              <div className='w-10 mr-3 flex justify-around'>{data.carte}
+                <Image src='/Pique.svg' width={15} height={15} />
+              </div>
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+              {data.pseudo}
+              </a>
+              <div className='w-14 text-right ml-3'>{data.points}</div>
+            </div>
+          </div>)
+            maisonComponents.trefle.push(<div className='flex justify-center'>
+              <div className='pb-2 pt-2 flex justify-center items-center border-b border-gray w-[90vw]' key={`${maison}-${maisonCounters[maison]}`}>
+              <div className='w-10 mr-3 flex justify-around'>{data.carte}
+                <Image src='/Trefle.svg' width={15} height={15} />
+              </div>
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+              {data.pseudo}
+              </a>
+              <div className='w-14 text-right ml-3'>{data.points}</div>
+            </div>
+          </div>)
             break;
 
             case 'jokerMS':
               moonTotal += data.points;
               starTotal += data.points;
-              maisonComponents.lune.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
-              <div className={`${colorClass} w-10`}>{data.carte}</div>
-                <Image src='/Lune.svg' width={15} height={15} />
-              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
-              {data.pseudo}
-              </a>
-              <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
-            </div>))
-              maisonComponents.etoile.push((<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }} key={`${maison}-${maisonCounters[maison]}`}>
-              <div className={`${colorClass} w-10`}>{data.carte}</div>
-                <Image src='/Etoile.svg' width={15} height={15} />
-              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`${colorClass} w-1/2`}>
-              {data.pseudo}
-              </a>
-              <div className={`${colorClass} w-14 text-left`}>{data.points}</div>
-            </div>))
+              maisonComponents.lune.push(<div className='flex justify-center'>
+                <div className='pb-2 pt-2 flex justify-center items-center border-b border-gray w-[90vw]' key={`${maison}-${maisonCounters[maison]}`}>
+                <div className='w-10 mr-3 flex justify-around'>{data.carte}
+                  <Image src='/Lune_gold.svg' width={15} height={15} />
+                </div>
+                <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+                {data.pseudo}
+                </a>
+                <div className='w-14 text-right ml-3'>{data.points}</div>
+              </div>
+            </div>)
+              maisonComponents.etoile.push(<div className='flex justify-center'>
+                <div className='pb-2 pt-2 flex justify-center items-center border-b border-gray w-[90vw]' key={`${maison}-${maisonCounters[maison]}`}>
+                <div className='w-10 mr-3 flex justify-around'>{data.carte}
+                  <Image src='/Etoile_gold.svg' width={15} height={15} />
+                </div>
+                <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+                {data.pseudo}
+                </a>
+                <div className='w-14 text-right ml-3'>{data.points}</div>
+              </div>
+            </div>)
               break;
         }
         maisonCounters[maison]++;
@@ -216,102 +237,101 @@ function Home() {
   const handleSlideChange = () => {
     const currentIndex = swiperRef.current.swiper.activeIndex;
     if (currentIndex === 0) {
-      setClassNameDiamond('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setDiamondColor('#ddb758');
+      setClassNameDiamond('flex bg-black rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setDiamondColor('#fff');
       setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setHeartColor('#fff')
+      setHeartColor('#000')
       setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setSpadeColor('#fff')
+      setSpadeColor('#000')
       setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setClubColor('#fff')
+      setClubColor('#000')
       setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setStarColor('#fff')
+      setStarColor('#000')
       setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setMoonColor('#fff')
+      setMoonColor('#000')
 
     } else if (currentIndex === 1){
       setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setDiamondColor('#fff')
-      setClassNameHeart('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setHeartColor('#ddb758');
+      setDiamondColor('#000')
+      setClassNameHeart('flex bg-black rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setHeartColor('#fff');
       setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setSpadeColor('#fff')
+      setSpadeColor('#000')
       setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setClubColor('#fff')
+      setClubColor('#000')
       setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setStarColor('#fff')
+      setStarColor('#000')
       setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setMoonColor('#fff')
+      setMoonColor('#000')
 
     }else if (currentIndex === 2) {
       setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setDiamondColor('#fff')
+      setDiamondColor('#000')
       setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setHeartColor('#fff')
-      setClassNameSpade('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setSpadeColor('#ddb758');
+      setHeartColor('#000')
+      setClassNameSpade('flex bg-black rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setSpadeColor('#fff');
       setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setClubColor('#fff')
+      setClubColor('#000')
       setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setStarColor('#fff')
+      setStarColor('#000')
       setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setMoonColor('#fff')
+      setMoonColor('#000')
 
     }else if (currentIndex === 3) {
       setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setDiamondColor('#fff')
+      setDiamondColor('#000')
       setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setHeartColor('#fff')
+      setHeartColor('#000')
       setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setSpadeColor('#fff');
-      setClassNameClub('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setClubColor('#ddb758')
+      setSpadeColor('#000');
+      setClassNameClub('flex bg-black rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setClubColor('#fff')
       setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setStarColor('#fff')
+      setStarColor('#000')
       setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setMoonColor('#fff')
+      setMoonColor('#000')
       
     }
     else if (currentIndex === 4) {
       setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setDiamondColor('#fff')
+      setDiamondColor('#000')
       setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setHeartColor('#fff')
+      setHeartColor('#000')
       setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setSpadeColor('#fff');
+      setSpadeColor('#000');
       setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setClubColor('#fff')
-      setClassNameStar('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setStarColor('#ddb758')
+      setClubColor('#000')
+      setClassNameStar('flex bg-black rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setStarColor('#fff')
       setClassNameMoon('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setMoonColor('#fff')
+      setMoonColor('#000')
       
     }
     else if (currentIndex === 5) {
       setClassNameDiamond('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setDiamondColor('#fff')
+      setDiamondColor('#000')
       setClassNameHeart('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setHeartColor('#fff')
+      setHeartColor('#000')
       setClassNameSpade('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setSpadeColor('#fff');
+      setSpadeColor('#000');
       setClassNameClub('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setClubColor('#fff')
+      setClubColor('#000')
       setClassNameStar('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setStarColor('#fff')
-      setClassNameMoon('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
-      setMoonColor('#ddb758')
+      setStarColor('#000')
+      setClassNameMoon('flex bg-black rounded-full w-[40px] h-[40px] p-2 justify-center items-center')
+      setMoonColor('#fff')
       
     }
   };
 
   return (
-    <div className='w-screen bg-[url(/main_background.webp)] bg-cover bg-no-repeat landscapes:h-max'>
-
+    <>
+    <div className='w-screen h-[70vh] rounded-b-[145px] bg-[url(/main_background.webp)] bg-cover bg-no-repeat landscapes:h-max'>
       <div className='flex items-center justify-center'>
-        <Image src={'/Logo.svg'} width={150} height={150} />
-        <h1 className="text-white text-xl font-['Cormorant_Garamond'] font-semibold">LUNÉTOILE</h1>
+        <Image src={'/Logo.svg'} width={100} height={100} />
+        <h1 className="text-white text-2xl font-['Cormorant_Garamond']">LUNÉTOILE</h1>
       </div>
-
       <HouseScore
         heartScore={{ score: heartScore, icon: '/Coeur.svg' }}
         clubScore={{ score: clubScore, icon: '/Trefle.svg' }}
@@ -320,7 +340,8 @@ function Home() {
         moonScore={{ score: moonScore, icon: '/Lune_gold.svg' }}
         starScore={{ score: starScore, icon: '/Etoile_gold.svg' }}
       />
-      <div className='flex w-screen justify-center mt-4 pb-4'>
+    </div>
+    <div className='flex w-screen justify-center mt-4 pb-4'>
         <div className='flex w-4/5 justify-around self-center'>
           <div className={classNameDiamond} onClick={() => { swiperRef.current.swiper.slideTo(0) }}>
             <Diamond color={diamondColor} width={30} height={30} />
@@ -342,7 +363,17 @@ function Home() {
           </div>
         </div>
       </div>
-      <Swiper
+      <div className='flex justify-center'>
+      <div className='flex w-[90vw] justify-around'>
+        <p className='italic'>Cartes</p>
+        <div className='flex flex-col items-center'>
+          <p className='italic'>Artistes</p>
+          <p className='italic text-gray'>Instagram</p>
+        </div>
+        <p className='italic'>Points</p>
+      </div>
+      </div>
+    <Swiper
         ref={swiperRef}
         spaceBetween={0}
         slidesPerView={1}
@@ -350,15 +381,15 @@ function Home() {
         centeredSlides={false}
         style={{display: 'flex'}}
       >
-        <SwiperSlide className= 'w-3/4'>{artistRow.carreau}</SwiperSlide>
-        <SwiperSlide className=' w-3/4'>{artistRow.coeur}</SwiperSlide>
-        <SwiperSlide className=' w-3/4'>{artistRow.pique}</SwiperSlide>
-        <SwiperSlide className=' w-3/4'>{artistRow.trefle}</SwiperSlide>
-        <SwiperSlide className=' w-3/4'>{artistRow.etoile}</SwiperSlide>
-        <SwiperSlide className=' w-3/4'>{artistRow.lune}</SwiperSlide>
+        <SwiperSlide >{artistRow.carreau}</SwiperSlide>
+        <SwiperSlide >{artistRow.coeur}</SwiperSlide>
+        <SwiperSlide >{artistRow.pique}</SwiperSlide>
+        <SwiperSlide >{artistRow.trefle}</SwiperSlide>
+        <SwiperSlide >{artistRow.etoile}</SwiperSlide>
+        <SwiperSlide >{artistRow.lune}</SwiperSlide>
       </Swiper>
       <Rules />
-    </div>
+    </>
   );
 }
 
