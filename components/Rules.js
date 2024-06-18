@@ -4,7 +4,7 @@ import GoldenCircle from './GoldenCircle';
 import TestImage from './TestImage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamation } from '@fortawesome/free-solid-svg-icons';
-
+import '../styles/Rules.module.css';
 
 function Rules() {
     const [showGoldenCircle, setShowGoldenCircle] = React.useState(false);
@@ -12,7 +12,7 @@ function Rules() {
   return (
     <div className='h-[45vh] w-screen mt-10 landscapes:h-[80vh]'>
         <div className='bg-white h-[50vh] pt-4 pb-4 landscapes:h-1/2 landscapes:pt-6 flex justify-center'> 
-            <div className='h-full flex flex-col justify-center items-center shadow-[0px_-5px_20px_0px_rgba(0,0,0,0.8)]'>
+            <div class='shadow-top-only'>
                 <h2 className="font-['Cormorant_Garamond'] font-semibold pl-3 pb-12 text-2xl">LE TOURNOI DES MAISONS</h2>
                 <p className='text-xs pl-3 pb-2'>Chers Artistes, </p>
                 <div className='w-3/4'>
@@ -23,17 +23,17 @@ function Rules() {
                 </div>
             </div>
         </div>
-        <div className='bg-[url(/main_background.webp)] pt-10 pb-10 bg-cover bg-no-repeat flex flex-col items-center landscapes:mt-0 landscapes:h-screen'>
-            <h2 className='font-["Cormorant_Garamond"] font-semibold text-white text-2xl pl-3 pb-10 self-center'>LES RÈGLES</h2>
-            <div className='flex '>
+        <div className='pt-10 pb-10 flex flex-col items-center landscapes:mt-0 landscapes:h-screen'>
+            <h2 className='font-["Cormorant_Garamond"] font-semibold  text-2xl pl-3 pb-10 self-center'>LES RÈGLES</h2>
+            <div className='flex'>
             <div className=' flex flex-col justify-between w-3/5 pr-2'>
                 <div>
-                    <p className='text-white text-xs pl-3 pb-5'>Effectuez un maximum de missions pour gagner des points.</p>
-                    <p className='text-white text-xs pl-3 pb-5'>Les scores seront régulièrement mis à jour sur le site.</p>
-                    <p className='text-white text-xs pl-3 pb-2' >
-                        La <span className='text-white font-bold'>personne avec le plus haut score </span> 
+                    <p className=' text-xs pl-3 pb-5'>Effectuez un maximum de missions pour gagner des points.</p>
+                    <p className=' text-xs pl-3 pb-5'>Les scores seront régulièrement mis à jour sur le site.</p>
+                    <p className=' text-xs pl-3 pb-2' >
+                        La <span className='font-bold'>personne avec le plus haut score </span> 
                         ainsi que la maison avec le plus haut score et tous les 
-                        <span className='text-white font-bold'> participants investis </span>seront récompensés.
+                        <span className='font-bold'> participants investis </span>seront récompensés.
                     </p>
                 </div>
             </div>

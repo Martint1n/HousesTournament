@@ -8,6 +8,24 @@ body {
 * {
   box-sizing: border-box;
 }
+.shadow-top-only {
+  position: relative;
+  border: solid 1px red;
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+}
+
+.shadow-top-only::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust based on the desired shadow height */
+  left: 0;
+  right: 0;
+  height: 10px; /* Adjust based on the desired shadow height */
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
+  z-index: -1; /* Ensure the shadow is behind the content */
+}
 
 @tailwind base;
 @tailwind components;
