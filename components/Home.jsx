@@ -7,7 +7,9 @@ import Moon from './Moon';
 import Star from './Star';
 import Image from 'next/image';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import 'swiper/css/bundle';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css';
 import HouseScore from './HouseScore';
 import Rules from './Rules';
 
@@ -29,14 +31,14 @@ function Home() {
   const [moonScore, setMoonScore] = useState(0);
   const [starScore, setStarScore] = useState(0);
 
-  const [heartColor, setHeartColor] = useState('#fff');
-  const [spadeColor, setSpadeColor] = useState('#fff');
-  const [clubColor, setClubColor] = useState('#fff');
-  const [diamondColor, setDiamondColor] = useState('#ddb758');
-  const [starColor, setStarColor] = useState('#fff');
-  const [moonColor, setMoonColor] = useState('#fff');
+  const [heartColor, setHeartColor] = useState('#000');
+  const [spadeColor, setSpadeColor] = useState('#000');
+  const [clubColor, setClubColor] = useState('#000');
+  const [diamondColor, setDiamondColor] = useState('#fff');
+  const [starColor, setStarColor] = useState('#000');
+  const [moonColor, setMoonColor] = useState('#000');
   
-  const [classNameDiamond, setClassNameDiamond] = useState('flex border border-gold rounded-full w-[40px] h-[40px] p-2 justify-center items-center');
+  const [classNameDiamond, setClassNameDiamond] = useState('flex bg-black rounded-full w-[40px] h-[40px] p-2 justify-center items-center');
   const [classNameHeart, setClassNameHeart] = useState('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center');
   const [classNameSpade, setClassNameSpade] = useState('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center');
   const [classNameClub, setClassNameClub] = useState('flex border-transparent rounded-full w-[40px] h-[40px] p-2 justify-center items-center');
@@ -101,7 +103,7 @@ function Home() {
               {data.maison === 'lune' && <Image src='/Lune_gold.svg' width={15} height={15} />}
               {data.maison === 'étoile' && <Image src='/Etoile_gold.svg' width={15} height={15} />}
             </div>
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2 italic`}>
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/3 italic text-[12px]`}>
             {data.pseudo}
             </a>
             <div className='w-14 text-right ml-3'>{data.points}</div>
@@ -327,7 +329,7 @@ function Home() {
 
   return (
     <>
-    <div className='w-screen h-[70vh] rounded-b-[145px] bg-[url(/main_background.webp)] bg-cover bg-no-repeat landscapes:h-max'>
+    <div className='w-screen h-[70vh] rounded-b-[145px] bg-deep-blue landscapes:h-max'>
       <div className='flex items-center justify-center'>
         <Image src={'/Logo.svg'} width={100} height={100} />
         <h1 className="text-white text-2xl font-['Cormorant_Garamond']">LUNÉTOILE</h1>
@@ -375,11 +377,15 @@ function Home() {
       </div>
     <Swiper
         ref={swiperRef}
+        modules={[Navigation]}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
         spaceBetween={0}
         slidesPerView={1}
         onSlideChange= {handleSlideChange}
-        centeredSlides={false}
-        style={{display: 'flex'}}
+        style={{display: 'flex', paddingBottom: 10}}
       >
         <SwiperSlide >{artistRow.carreau}</SwiperSlide>
         <SwiperSlide >{artistRow.coeur}</SwiperSlide>
@@ -387,6 +393,9 @@ function Home() {
         <SwiperSlide >{artistRow.trefle}</SwiperSlide>
         <SwiperSlide >{artistRow.etoile}</SwiperSlide>
         <SwiperSlide >{artistRow.lune}</SwiperSlide>
+
+        <div class="swiper-button-prev" onClick={() => swiperRef.current?.slidePrev()}></div>
+        <div class="swiper-button-next" onClick={() => swiperRef.current?.slideNext()}></div>
       </Swiper>
       <Rules />
     </>

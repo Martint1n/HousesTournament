@@ -60,21 +60,21 @@ console.log(sortedScores)
 
 const houses = sortedScores.map((data, i) => {
   return (
-    <div className='bg-white w-1/2 h-5 mb-1 flex justify-around items-center rounded-md mt-1'>
+    <div className='bg-white w-1/2 pt-1 pb-1 mb-4 flex justify-around items-center rounded-md'>
       <Image src={data.icon} width={15} height={15}/>
-      <div >{data.score}</div>
+      <div>{data.score}</div>
     </div>
   )
 })
 
 
   return (
-    <div className='flex h-[250px] w-full justify-center landscapes:h-[280px]'>
-      <div className='flex flex-col justify-center items-center mr-2 border border-gold border-solid bg-black h-full w-2/5 rounded-b-full landscapes:w-1/4 landscapes:mr-10'>
+    <div className='flex h-3/5 w-full justify-center landscapes:h-[280px]'>
+      <div className='flex flex-col justify-center items-center mr-2 h-full w-2/5 landscapes:w-1/4 landscapes:mr-10'>
         <Image src='/Crown.svg' width={20} height={40}/>
       {houses}
       </div>
-      <div className='flex flex-col justify-center items-center ml-2 border-2 border-gold border-solid bg-deep-blue h-full w-2/5 rounded-b-full landscapes:w-1/4'>
+      <div className='mt-5 flex flex-col self-center justify-center items-center ml-2 border-2 border-gold border-solid bg-deep-blue h-2/3 w-2/5 rounded-b-full landscapes:w-1/4'>
         <h2 className='pb-2'>
           <span style={{display: 'block', color: '#ddb758', textAlign: 'center'}} className='font-["Cormorant_Garamond"]'>TOURNOI</span>
           <span style={{display: 'block', color: 'white'}} className='font-["Cormorant_Garamond"]'>DES MAISONS</span>

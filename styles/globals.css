@@ -8,9 +8,16 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: "red"; /* Couleur des chevrons */
+  width: 50px; /* Largeur des chevrons */
+  height: 50px; /* Hauteur des chevrons */
+}
+
 .shadow-top-only {
   position: relative;
-  border: solid 1px red;
   display: 'flex';
   justify-content: 'center';
   align-items: 'center';
@@ -23,6 +30,24 @@ body {
   left: 0;
   right: 0;
   height: 10px; /* Adjust based on the desired shadow height */
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
+  z-index: -1; /* Ensure the shadow is behind the content */
+}
+
+.shadow-top-only-2 {
+  position: relative;
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+}
+
+.shadow-top-only-2::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust based on the desired shadow height */
+  left: 0;
+  right: 0;
+  height: 100px; /* Adjust based on the desired shadow height */
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
   z-index: -1; /* Ensure the shadow is behind the content */
 }
