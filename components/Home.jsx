@@ -145,7 +145,7 @@ function Home() {
                 {data.carte}
                 <Image src='/Coeur.svg' width={15} height={15} />
               </div>
-              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta italic w-1/2`}>
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta italic w-1/3 text-[12px]`}>
               {data.pseudo}
               </a>
               <div className='w-14 text-right ml-3'>{data.points}</div>
@@ -157,7 +157,7 @@ function Home() {
               {data.carte}
               <Image src='/Carreau.svg' width={15} height={15} />
             </div>
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/3 text-[12px]`}>
             {data.pseudo}
             </a>
             <div className='w-14 text-right ml-3'>{data.points}</div>
@@ -173,7 +173,7 @@ function Home() {
               <div className='w-10 mr-3 flex justify-around'>{data.carte}
                 <Image src='/Pique.svg' width={15} height={15} />
               </div>
-              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/3 text-[12px]`}>
               {data.pseudo}
               </a>
               <div className='w-14 text-right ml-3'>{data.points}</div>
@@ -184,7 +184,7 @@ function Home() {
               <div className='w-10 mr-3 flex justify-around'>{data.carte}
                 <Image src='/Trefle.svg' width={15} height={15} />
               </div>
-              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/3 text-[12px]`}>
               {data.pseudo}
               </a>
               <div className='w-14 text-right ml-3'>{data.points}</div>
@@ -200,7 +200,7 @@ function Home() {
                 <div className='w-10 mr-3 flex justify-around'>{data.carte}
                   <Image src='/Lune_gold.svg' width={15} height={15} />
                 </div>
-                <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+                <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/3 text-[12px]`}>
                 {data.pseudo}
                 </a>
                 <div className='w-14 text-right ml-3'>{data.points}</div>
@@ -211,7 +211,7 @@ function Home() {
                 <div className='w-10 mr-3 flex justify-around'>{data.carte}
                   <Image src='/Etoile_gold.svg' width={15} height={15} />
                 </div>
-                <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/2`}>
+                <a href={instagramLink} target="_blank" rel="noopener noreferrer" className={`text-urlInsta w-1/3 text-[12px]`}>
                 {data.pseudo}
                 </a>
                 <div className='w-14 text-right ml-3'>{data.points}</div>
@@ -370,7 +370,7 @@ function Home() {
         <p className='italic'>Cartes</p>
         <div className='flex flex-col items-center'>
           <p className='italic'>Artistes</p>
-          <p className='italic text-gray'>Instagram</p>
+          <p className='italic text-gray text-[12px]'>Instagram</p>
         </div>
         <p className='italic'>Points</p>
       </div>
@@ -385,7 +385,7 @@ function Home() {
         spaceBetween={0}
         slidesPerView={1}
         onSlideChange= {handleSlideChange}
-        style={{display: 'flex', paddingBottom: 10}}
+        style={{display: 'flex', paddingBottom: 10, marginTop: 20}}
       >
         <SwiperSlide >{artistRow.carreau}</SwiperSlide>
         <SwiperSlide >{artistRow.coeur}</SwiperSlide>

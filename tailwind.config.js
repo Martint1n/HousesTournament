@@ -25,7 +25,7 @@ module.exports = {
       'gray': 'rgb(107 114 128)',
       'lightGray': 'rgb(242 242 242)',
       'charcoal': 'rgb(10 20 25)',
-      'red': '#800020',
+      'red': '#F15A24',
       'urlInsta': '#0000EE'
     },
   },
