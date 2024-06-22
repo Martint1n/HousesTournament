@@ -54,8 +54,6 @@ function Rules() {
                     </p>
             </div>
         </div>
-        {/* 
-        <GoldenCircle showGoldenCircle={true} />  */}
         <div className='shadow-top-only-2 flex justify-center items-center'>
             <p className='pt-5 pb-8 font-["Cormorant_Garamond"] text-2xl'>LES MISSIONS</p>
         </div>
@@ -134,9 +132,9 @@ function Rules() {
         </div>
 
 
-        <div className='bg-deep-blue w-screen flex pt-5 pb-5 flex-col'>
-            <h2 className="text-gold font-['Cormorant_Garamond'] font-semibold self-center">COLLABORATIONS</h2>
-            <p className='text-xs italic text-white leading-5 pl-3 self-center'>Si vous effectuez ces missions avec des personnes <br/>hors de vos cercles sociaux, vos points sont doublés</p>
+        <div className='bg-deep-blue w-screen flex pt-5 pb-5 pl-5 flex-col'>
+            <h2 className="text-gold font-['Cormorant_Garamond']">COLLABORATIONS</h2>
+            <p className='w-[80vw] text-xs italic text-white leading-5'>Si vous effectuez ces missions avec des personnes hors de vos cercles sociaux, vos points sont doublés</p>
         </div>
         <div className='pl-3 flex pt-3 pb-3 justify-between items-center'>
             <div className='flex items-center pl-3'>
