@@ -31,8 +31,8 @@ function Rules() {
                 </div>
             </div>
         </div>
-        <div className='pl-2 pr-2 pt-4 flex flex-col justify-around items-center mr-2 bg-deep-blue h-[200px] w-screen rounded-b-[145px] landscapes:w-1/5 landscapes:m-auto landscapes:h-4/5'>
-            <h2 className='font-["Cormorant_Garamond"] text-gold pb-2 self-center font-bold'>MAISONS</h2>
+        <div className='pl-2 pr-2 pt-4 flex flex-col justify-around items-center mr-2 bg-deep-blue h-[250px] w-screen rounded-b-[145px] landscapes:w-1/5 landscapes:m-auto landscapes:h-4/5'>
+            <h2 className='font-["Cormorant_Garamond"] text-gold pb-2 self-center text-2xl'>MAISONS</h2>
             <div className='flex pb-2 justify-between w-3/5'>
                 <Image src='/Diamond_gold.svg' width={20} height={20}/>
                 <Image src='/Heart_gold.svg' width={20} height={20} />
@@ -41,13 +41,13 @@ function Rules() {
                 <Image src='/Etoile_gold.svg' width={20} height={20} />
                 <Image src='/Lune_gold.svg' width={20} height={20} />
             </div>
-            <p className='text-gold text-xs pb-4 w-2/5 text-center'>vous êtes <span className='text-gold font-bold'>affilié à une maison</span> en fonction de la carte que vous avez illustrée</p>                
+            <p className='text-gold text-base pb-4 w-2/5 text-center'>vous êtes <span className='text-gold font-bold'>affilié à une maison</span> en fonction de la carte que vous avez illustrée</p>                
         </div>
         <div className='pt-10 pb-14 flex flex-col items-center landscapes:mt-0 landscapes:h-screen'>
             <h2 className='font-["Cormorant_Garamond"] text-2xl pl-3 pb-5 self-center'>LES RÈGLES</h2>
             <div className=' flex flex-col justify-between w-4/5 pr-2'>
-                    <p className=' text-xs pl-3 pb-2 text-center'>Effectuez un maximum de <span className='text-xs font-bold'>missions pour gagner des points.</span></p>
-                    <p className=' text-xs pl-3 pb-2 text-center' >
+                    <p className=' text-base pl-3 pb-2 text-center'>Effectuez un maximum de <span className='font-bold'>missions pour gagner des points.</span></p>
+                    <p className=' text-base pl-3 pb-2 text-center' >
                         La <span className='font-bold'>personne avec le plus haut score </span> 
                         ainsi que <span className='font-bold'>la maison</span> avec le plus haut score et tous les 
                         <span className='font-bold'> participants investis </span>seront récompensés.
@@ -72,7 +72,7 @@ function Rules() {
                 <div className='self-end'>
                 <FontAwesomeIcon icon={faXmark} width={30} height={30} color='#02091d' onClick={handleCloseStory}/>
                 </div>
-                <p className="font-['Cormorant_Garamond'] font-bold text-center">STORIES</p>
+                <p className="font-['Cormorant_Garamond'] text-center">STORIES</p>
                 <p className='pt-5 text-xs text-center w-4/5'>Les stories seront 
                 <span className='text-xs font-bold'> quotidiennes </span> 
                 et alterneront entre 
@@ -198,7 +198,7 @@ function Rules() {
         <div className='flex pl-3 pt-3 pb-3 justify-between items-center'>
             <div className='flex items-center pl-3'>
                 <Image src='/MissionsICON/Coeur_black.svg' height={30} width={30}/>
-                <p className='text-xs pl-3'>Liker mon dernier message<br/>sur instagram</p>
+                <p className='text-xs pl-3'>Liker mon dernier message<br/>sur le groupe instagram</p>
             </div>
             <div className='text-xs pr-5 font-bold'>+5 points</div>
         </div>
