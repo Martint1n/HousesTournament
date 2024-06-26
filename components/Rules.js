@@ -18,8 +18,8 @@ function Rules() {
   return (
     <div className='h-[45vh] w-screen mt-10 landscapes:h-[80vh]'>
         <div className='bg-white pt-4 pb-4 landscapes:h-1/2 landscapes:pt-6 flex'> 
-            <div className='shadow-top-only flex flex-col justify-center items-center'>
-                <h2 className="pt-4 font-['Cormorant_Garamond'] pl-3 pb-4 text-2xl text-center">LE TOURNOI DES MAISONS</h2>
+            <div className='shadow-top-only w-screen flex flex-col justify-center items-center'>
+                <h2 className="font-['Cormorant_Garamond'] pt-4 pb-4 text-2xl text-center">LE TOURNOI DES MAISONS</h2>
                 <p className='text-base pb-3 text-center'>Chers Artistes,</p>
                 <div className='w-3/4'>
                     <p className='pl-3 pb-4 text-center'>
@@ -52,6 +52,7 @@ function Rules() {
                     </p>
             </div>
         </div>
+        
         <div className='shadow-top-only-2 flex justify-center items-center'>
             <p className='pt-5 pb-8 font-["Cormorant_Garamond"] text-2xl'>LES MISSIONS</p>
         </div>
