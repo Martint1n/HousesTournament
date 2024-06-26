@@ -1,12 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import GoldenCircle from './GoldenCircle';
-import TestImage from './TestImage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamation, faQuestion, faAt, faXmark } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Rules.module.css';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 function Rules() {
@@ -69,7 +67,7 @@ function Rules() {
         >
             <Box className='absolute top-1/2 bottom-1/2 self-center'>
             <div className='bg-white w-screen flex flex-col items-center'>
-                <div className='self-end'>
+                <div className='self-end pt-2 pr-2'>
                 <FontAwesomeIcon icon={faXmark} width={30} height={30} color='#02091d' onClick={handleCloseStory}/>
                 </div>
                 <p className="font-['Cormorant_Garamond'] text-center">STORIES</p>
@@ -83,11 +81,11 @@ function Rules() {
                 <span className='text-xs font-bold'> accumuler des points !</span> 
                 </p>
             <div className='flex w-full justify-around pb-5'>
-                <div className='flex flex-col items-center justify-center pt-5 pb-5'>
+                <div className='flex flex-col items-center justify-center pt-5 pb-5 pl-10'>
                     <p className='text-gold'>J1</p>
                     <Image src='/story1.svg' width={100} height={200}/>
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='flex flex-col items-center justify-center pr-10'>
                     <p className='text-gold'>J2</p>
                     <Image src='/story2.svg' width={100} height={200}/>
                 </div>
@@ -118,7 +116,7 @@ function Rules() {
         </div>
         <div className='flex pl-3 pt-3 pb-3 bg-lightGray justify-between items-center'>
             <div className='flex items-center pl-3'>
-                <Image src='/MissionsICON/Mystère.svg' height={30} width={30}/>
+                <Image src='/Mystère.svg' height={30} width={30}/>
                 <p className='text-xs pl-3'>Trouver la prochaine carte révélée</p>
             </div>
             <div className='text-xs font-bold pr-3'>+10 points</div>
